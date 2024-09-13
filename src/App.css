@@ -1,0 +1,305 @@
+*{
+ margin: 0px;
+ padding: 0px;
+ box-sizing: border-box;
+ background: #fcfcfc;
+ font-family: Arial, Helvetica, sans-serif, ;
+}
+.page{
+ padding:  0px 50px 0px 50px;
+}
+/* Navbar slide-in animation */
+@keyframes slideIn {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+/* Add your existing styles for the hero section elements here */
+.header {
+
+  animation: slideIn 1s ease-out;
+  padding: 20px 0px 0px 0px;
+}
+.logo-name {
+  width: 20%;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+}
+.nav-links {
+  display: flex;
+  list-style-type: none; 
+  margin: 0;
+  padding: 0;
+}
+li {
+  margin-left: 1.5rem;
+}
+li a {
+  text-decoration: none;
+  font-size: 17px;
+  color: rgb(11, 3, 31);
+  font-weight: 600;
+  transition: color 0.3s, transform 0.3s;
+}
+/* Hover effect for nav links */
+li a:hover {
+  color: rgb(115, 167, 212);
+  transform: scale(1.1);
+}
+.btn-1 {
+  padding: 5px 20px;
+  font-size: 15px;
+  background: rgb(115, 167, 212);
+  color: #fff;
+  border-color: #fff;
+  border-radius: 5px;
+  border: none;
+  transition: background-color 0.3s, transform 0.3s;
+}
+.btn-1:hover {
+  background-color: rgb(95, 147, 192);
+  transform: scale(1.05);
+}
+.btn-li {
+  margin-top: -5px;
+}
+/* hero section design */
+/* Keyframes for text animations */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* Apply animations to text elements */
+.section h1 {
+  animation: fadeInUp 1s ease-out forwards;
+}
+.slogun h3 {
+  animation: fadeInUp 2s ease-out forwards;
+}
+.quote p {
+  animation: fadeIn 2s ease-out forwards;
+}
+/* Existing styles */
+.hero-section {
+  padding: 100px 0px 0px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section {
+  font-size: 20px;
+}
+.slogun {
+  padding: 15px 0px 0px 0px;
+  color: rgb(239, 168, 54);
+}
+.quote {
+  width: 40%;
+  padding: 15px 0px 0px 0px;
+}
+.btns {
+  padding: 15px 10px 0px 10px;
+}
+.button-2 {
+  margin-left: 20px;
+  padding: 15px 25px 15px 25px;
+  font-size: 15px;
+  background: rgb(115, 167, 212);
+  color: #fff;
+  border-color: #fff;
+  border-radius: 5px;
+  border: none;
+}
+.button-1 {
+  padding: 15px 25px 15px 25px;
+  font-size: 15px;
+  background: rgb(115, 167, 212);
+  color: #fff;
+  border-color: #fff;
+  border-radius: 5px;
+  border: none;
+}
+.hero-image {
+  padding: 0px 30px 0px 0px;
+}
+/* services-section */
+.services-title{
+  text-align: center;
+  padding: 60px 0px 0px 0px;
+  text-decoration: underline;
+}
+.services-quotes{
+  text-align: center;
+  padding: 15px 0px 0px 0px;
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(6, 6, 63);
+}
+.services-image {
+  transition: transform 0.5s ease-in-out;
+}
+.services-item-list:hover {
+  transform: scale(1.1);
+  box-shadow: rgba(0, 0, 0, 0.7) 0px 10px 20px -5px;
+  height: auto;
+  transition: transform 0.5s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+/*  add here the list product  */
+.services-list{
+  display: grid;
+  grid-template-columns:  repeat(4, 1fr);
+  gap: 1rem;
+  padding: 50px 0px 50px 0px;
+}
+.services-item-list{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  border-radius: 10px;
+  transition:  tranform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  text-align: center;
+}
+.services-item-list:hover {
+  transform: scale(1.1);
+  box-shadow: rgba(0, 0, 0, 0.7) 0px 10px 20px -5px;
+}
+.contact-btn {
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container-1 {
+  text-align: center;
+  background-color: rgb(82, 82, 235);
+  border-radius: 10px;
+  width: 75%;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.container-p,
+.container-a {
+  margin-bottom: 10px;
+  background: rgb(82, 82, 235);
+}
+.container-p {
+  font-size: 24px;
+  font-weight: bold;
+color: #fff;
+  background: rgb(82, 82, 235);
+}
+.container-a {
+  font-size: 18px;
+}
+.contact-us {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0;
+  background: rgb(82, 82, 235);
+}
+.right {
+  margin-right: 10px;
+  width: 100px;
+}
+.btn-2{
+  padding: 10px 10px 10px 10px;
+  border: none;
+  font-weight: 200;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: background-color 0.3s ease;
+}
+.btn-2:hover{
+  background-color: #191133;
+}
+.img-width-size{
+  width: 200px;
+}
+/* Member section style */
+.our-members{
+  text-align: center;
+}
+.our-members-titles{
+  color: #2f424e; 
+  text-align: underline;
+}
+.our-member-list{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid  black;
+  margin-top: 20px;
+}
+.div-1{
+  padding: 50px 50px 50px 50px;
+  border: 1px solid black;
+}
+.our-members-container{
+  margin-top: 20px;
+}
+.img-size-icreases{
+  width: 150px;
+  height: 150px;
+}
+/* .services-image-bigadna{
+
+} */
+
+/*  footer section design template here */
+.footer-container{
+  border: 1px solid black;
+  margin: 10px 0px 10px 0px ;
+  background-color: #724d4d;
+  border-radius: 5px ;
+}
+/* .footer-container-1{
+
+} */
+.footer-list-item-value{
+ display: flex;
+ align-items: center;
+ padding: 10px 10px 10px 10px;
+ justify-content: space-between;
+}
+.image-size-badao{
+  width: 100px;
+}
+.color-item{
+  background-color: #724d4d;
+  font-size: 16px;
+  text-align: center;
+}
+/*  home list item are design here */
+
+.unordered-list{
+  text-decoration: none;
+}
+/*  list item services are design */
+ li{
+  list-style: none;
+  font-size: 15px;
+  line-height: 1.5rem;
+  font-weight: 200;
+  }
