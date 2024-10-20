@@ -6,7 +6,7 @@
  font-family: Arial, Helvetica, sans-serif, ;
 }
 .page{
- padding:  0px 50px 0px 50px;
+ padding:  0px 40px 0px 40px;
 }
 /* Navbar slide-in animation */
 @keyframes slideIn {
@@ -108,6 +108,10 @@ li a:hover {
   justify-content: space-between;
   align-items: center;
 }
+.some-about-content{
+  width: 50%;
+}
+
 .secure-it{
   color: rgb(115, 167, 212);
   font-weight: 600;
@@ -121,7 +125,7 @@ li a:hover {
   color: rgb(6, 6, 63);
 }
 .font{
-  font-family: 'Oswald' , sans-serif;
+  font-family: 'Oswald', sans-serif;
 }
 .section {
   font-size: 20px;
@@ -170,6 +174,31 @@ li a:hover {
 .hero-image {
   padding: 0px 30px 0px 0px;
 }
+/* some about content */
+.span{
+  color: rgb(239, 32, 4);
+}
+.checkbox-flex{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 20px;
+}
+.topex{
+  margin-top: 10px;
+}
+.quote-1{
+  margin-top: 20px;
+  color: gray;
+  font-size: 15px;
+  line-height: 1.5rem;
+}
+.quote-2{
+  color: gray;
+  font-size: 15px;
+  line-height: 1.5rem;
+}
+
 /* services-section */
 .services-title{
   text-align: center;
@@ -407,7 +436,6 @@ padding: 30px 500px;
 .button-3{
   background-color: #fff;
   color: black;
-
 }
 
 
