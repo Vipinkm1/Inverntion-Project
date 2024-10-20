@@ -103,10 +103,19 @@ li a:hover {
 }
 /* Existing styles */
 .hero-section {
-  padding: 100px 0px 0px 0px;
+  padding: 150px 0px 0px 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.secure-it{
+  color: rgb(115, 167, 212);
+  font-weight: 600;
+  text-decoration: underline;
+}
+.hero-font{
+  font-size: 40px;
+  margin-top: 20px;
 }
 .color{
   color: rgb(6, 6, 63);
@@ -127,6 +136,10 @@ li a:hover {
 }
 .btns {
   padding-top: 15px;
+  display: flex ;
+  align-items: center;
+  justify-content: start;
+  gap: 30px;
 }
 .button-2 {
   margin-left: 20px;
@@ -275,13 +288,11 @@ border-top:  1px solid  #ee6464;
 
 .footer-container-1 {
   width: 100%
-}
-
+} 
 .some-content {
   padding-top: 20px;
   cursor: pointer;
 }
-
 .footer-services {
   padding-top: 10px;
   font-size: 15px;
@@ -325,7 +336,6 @@ border-top:  1px solid  #ee6464;
 .para2 {
   font-size: 14px;
 }
-
 .para3 {
   padding: 10px 0px 10px 0px;
   font-size: 16px;
@@ -339,7 +349,7 @@ border-top:  1px solid  #ee6464;
 /* Contact page css */
 .contact-heading{
  text-align: center;
- padding-top: 150px;
+ padding-top: 100px;
 }
 .para4{
   padding-top: 20px;
@@ -348,29 +358,56 @@ border-top:  1px solid  #ee6464;
   color: #868383;
 }
 .contact-form{
- padding: 20px ;
- margin-top: 50px;
- border: 1px solid #b3b1b1;
- border-radius: 2px;
- width: 50%;
+padding: 30px 500px;
+
+
+}
+.contact-form-border{
+
+  padding: 25px;
+  background-color: #191133;
+  border-radius: 2px;
+
+  
 }
 .form-input{
   display: flex;
   flex-direction: column;
-   width: 100%;
+  width: 100%;
+  background-color: #191133;
+
+  
 }
 .input-width{
  margin-top: 10px;
  padding: 10px;
  width: 100%;
+ background: rgb(115, 167, 212);
+ border-color: #fff;
+ border: none;
+ outline: none;
+ border-radius: 2px;
+
 }
 .input-title{
   margin-top: 10px;
+  background-color: #191133;
+  color: #fff;
 }
 .input-message{
   margin-top: 10px;
   width: 100%;
   padding: 10px;
+  background: rgb(115, 167, 212);
+
+  border: none;
+  outline: none;
+  border-radius: 2px;
+}
+.button-3{
+  background-color: #fff;
+  color: black;
+
 }
 
 

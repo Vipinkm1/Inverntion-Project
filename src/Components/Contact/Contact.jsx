@@ -1,5 +1,5 @@
 import React from 'react'
-import ContactImg from '../../assets/2912016.webp'
+
 const Contact = () => {
   return (
     <div className='contact-container'>
@@ -8,8 +8,7 @@ const Contact = () => {
         <p className='  para4'>"We're here to help! Whether you have a question about our products, services, or need assistance, feel free to reach out to us. Our team is always ready to support you."</p>
       </div>
       <div className='contact-form'>
-
-        <form>
+        <form className='contact-form-border'>
           <div className='form-input'>
             <label className='input-title'>Name</label>
             <input type='text' placeholder='Enter your name' className='input-width' />
@@ -26,7 +25,7 @@ const Contact = () => {
             <label className='input-title'>Message</label>
             <input type='text' placeholder='Enter your name' className='input-message' />
           </div>
-          <button className='button-1  input-title'>Submit Now</button>
+          <button className='button-1  input-title button-3'>Submit Now</button>
         </form>
     </div>
   
