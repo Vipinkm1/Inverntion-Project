@@ -1,19 +1,36 @@
 import React, { useEffect, useRef, useState } from 'react'
 import Lottie from 'lottie-react'
+import Slider from 'react-slick';
 import Frontend from '../../assets/frontend-dev.json'
 import Hero from '../../assets/hero-image-d.png'
 import { ImCheckboxChecked } from "react-icons/im";
+import Digi from '../../assets/service/digital-marketing-services.jpeg'
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 
 const HeroSection = () => {
 
     const services = [
-        { id: 1, Img: Hero, title: 'Web Development', description: 'The best web developers dont just build websites.' },
-        { id: 1, Img: Hero, title: 'Software Development', description: 'The best web developers dont just build websites ' },
-        { id: 1, Img: Hero, title: 'Digital Marketing', description: 'The best web developers dont just build websites' },
-        { id: 1, Img: Hero, title: 'Costom Website', description: 'The best web developers dont just build websites' },
-        { id: 1, Img: Hero, title: 'E-Commerce Excutive', description: 'The best web developers dont just build websites' },
-        { id: 1, Img: Hero, title: 'Seo', description: 'The best web developers dont just build websites' },
+        { id: 1, Img: Digi, title: 'Web Development', description: 'The best web developers dont just build websites.' },
+        { id: 1, Img: Digi, title: 'Software Development', description: 'The best web developers dont just build websites ' },
+        { id: 1, Img: Digi, title: 'Digital Marketing', description: 'The best web developers dont just build websites' },
+        { id: 1, Img: Digi, title: 'Costom Website', description: 'The best web developers dont just build websites' },
+        { id: 1, Img: Digi, title: 'E-Commerce Excutive', description: 'The best web developers dont just build websites' },
+        { id: 1, Img: Digi, title: 'Seo', description: 'The best web developers dont just build websites' },
     ]
+
+    const sliderSettings = {
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false,
+        cssEase: "ease-in-out"
+
+    }
 
     return (
         <div className='page'>
@@ -114,19 +131,22 @@ const HeroSection = () => {
                     <button className='button-1'>View All Services</button>
                 </div>
             </div>
+            {/* check  */}
             <div className='grid-template'>
-                {services.map((services) => (
-                    <div className='grid-border topex' key={services.id}>
-                        <div className='img-aspect'>
-                            <img className='services-img-add' src={services.Img} />
+                <Slider {...sliderSettings}>
+                    {services.map((services) => (
+                        <div className='grid-border topex-2' key={services.id}>
+                            <div className='img-aspect'>
+                                <img className='services-img-add' src={services.Img} />
+                            </div>
+                            <div className='img-aspect-1'>
+                                <h3 className='copyright'>{services.title}</h3>
+                                <p className='font  quote-1 copyright'>{services.description}</p>
+                                <p className='copyright secure-it font '>Read More</p>
+                            </div>
                         </div>
-                        <div className='img-aspect-1'>
-                        <h3 className='copyright'>{services.title}</h3>
-                        <p className='font  quote-1'>{services.description}</p>
-                        <p className='copyright secure-it font '>Read More</p>
-                        </div>
-                    </div>
-                ))}
+                    ))}
+                </Slider>
             </div>
         </div>
     )

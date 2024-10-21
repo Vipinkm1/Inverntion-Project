@@ -268,21 +268,19 @@ li a:hover {
   align-items: center;
   justify-content: space-between;
 }
-
-.grid-template{
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 20px;
-}
 .grid-border{
-  width: 100%;
+  padding: 10px;
 }
+.grid-template{
+
+}
+
 .services-img-add{
   background: rgb(115, 167, 212);
-  border-radius: 2px;
-  width: 250px;
+  border-radius: 5px;
+  width:100%;
+ 
 }
-
 /* Member section style */
 /*  footer section design template here */
 .footer {
