@@ -1,10 +1,20 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Lottie from 'lottie-react'
 import Frontend from '../../assets/frontend-dev.json'
 import Hero from '../../assets/hero-image-d.png'
 import { ImCheckboxChecked } from "react-icons/im";
 
 const HeroSection = () => {
+
+    const services = [
+        { id: 1, Img: Hero, title: 'Web Development', description: 'The best web developers dont just build websites.' },
+        { id: 1, Img: Hero, title: 'Software Development', description: 'The best web developers dont just build websites ' },
+        { id: 1, Img: Hero, title: 'Digital Marketing', description: 'The best web developers dont just build websites' },
+        { id: 1, Img: Hero, title: 'Costom Website', description: 'The best web developers dont just build websites' },
+        { id: 1, Img: Hero, title: 'E-Commerce Excutive', description: 'The best web developers dont just build websites' },
+        { id: 1, Img: Hero, title: 'Seo', description: 'The best web developers dont just build websites' },
+    ]
+
     return (
         <div className='page'>
             <div className=' hero-section '>
@@ -33,30 +43,92 @@ const HeroSection = () => {
                     <h1 className='color font hero-font'>Preparing For Your Business Provide Best <span className='span'>IT Solution</span> </h1>
                     <p className=' quote-1 font '>Quickly re-engineer intuitive e-services whereas compelling niches. Professionally syndicate strategic e-commerce without covalent leadership skills. Globally customize equity invested imperatives.</p>
                     <div className='checkbox-flex topex'>
-                    <ImCheckboxChecked/>
-                    <p  className='quote-2 font'>Dramatically re-engineer value added IT systems via mission</p>
+                        <ImCheckboxChecked />
+                        <p className='quote-2 font'>Dramatically re-engineer value added IT systems via mission</p>
                     </div>
                     <div className='checkbox-flex topex'>
-                    <ImCheckboxChecked/>
-                    <p  className='quote-2 font'>Dramatically re-engineer value added IT systems via mission</p>
+                        <ImCheckboxChecked />
+                        <p className='quote-2 font'>Dramatically re-engineer value added IT systems via mission</p>
                     </div>
                     <div className='checkbox-flex topex'>
-                    <ImCheckboxChecked/>
-                    <p  className='quote-2 font'>Dramatically re-engineer value added IT systems via mission</p>
+                        <ImCheckboxChecked />
+                        <p className='quote-2 font'>Dramatically re-engineer value added IT systems via mission</p>
                     </div>
                     <div className='checkbox-flex topex'>
-                    <ImCheckboxChecked/>
-                    <p  className='quote-2 font'>Dramatically re-engineer value added IT systems via mission</p>
+                        <ImCheckboxChecked />
+                        <p className='quote-2 font'>Dramatically re-engineer value added IT systems via mission</p>
                     </div>
                     <div className='btns'>
-                    <button className='button-1 font'>Discover More</button>
+                        <button className='button-1 font'>Discover More</button>
                     </div>
-
                 </div>
             </div>
+            <div className='contact-btn topex-2'>
+                <div className='container-1'>
+                    <div>
+                        <h1 className='container-p font'>Let our incredible team assist you with Website Development</h1>
+                    </div>
+                    <div className='container-2'>
+                        <h1 className='container-a font' >Let our incredible team assist you with Website Development</h1>
+                    </div>
+                    <div className='contact-us'>
+                        <button className='button-1'>Contact Us</button>
+                    </div>
+                </div>
+            </div>
+            <div className='topex-2'>
+                <h1 className='color font hero-font copyright  '>More Than 24+ Years Experience<br /> We Provide <span className='span'>IT Services</span></h1>
+                <p className='quote-1 font copyright'>Collaboratively envisioneer user friendly supply chains and cross unit imperative. Authoritativel fabricate competitive resource and holistic. Holisticly restore real time resources whereas standardized networks.</p>
+                <div className='it-services '>
+                    <div className='experience-field'>
+                        <p>Web Development</p>
+                        <p className='fill-border topex'></p>
+                        <p className='topex'>E-Commerce Excutive</p>
+                        <p className='fill-border topex'></p>
+                        <p className='topex'>Software Development</p>
+                        <p className='fill-border topex'></p>
+                        <p className='topex'>Digital Marketing</p>
+                        <p className='fill-border topex'></p>
+                        <p className='topex'>Search Engine Marketing</p>
+                        <p className='fill-border topex'></p>
+                    </div>
+                    <div className='experience-field'>
+                        <p>CMS Tool</p>
+                        <p className='fill-border topex'></p>
+                        <p className='topex'>Costom Design</p>
+                        <p className='fill-border topex'></p>
+                        <p className='topex'>Web design</p>
+                        <p className='fill-border topex'></p>
+                        <p className='topex'>Magneto Website</p>
+                        <p className='fill-border topex'></p>
+                        <p className='topex'>Costom Website</p>
+                        <p className='fill-border topex'></p>
+                    </div>
+                </div>
+            </div>
+            <div className='topex-2'>
+                <p className='secure-it font'>What we do</p>
+                <div className='it-services-flex'>
+                    <h1 className='color font hero-font'>We Provide Exclusive Service <br />For
+                        <span className='span'>  Your Business</span></h1>
+                    <button className='button-1'>View All Services</button>
+                </div>
+            </div>
+            <div className='grid-template'>
+                {services.map((services) => (
+                    <div className='grid-border topex' key={services.id}>
+                        <div className='img-aspect'>
+                            <img className='services-img-add' src={services.Img} />
+                        </div>
+                        <div className='img-aspect-1'>
+                        <h3 className='copyright'>{services.title}</h3>
+                        <p className='font  quote-1'>{services.description}</p>
+                        <p className='copyright secure-it font '>Read More</p>
+                        </div>
+                    </div>
+                ))}
+            </div>
         </div>
-
-
     )
 }
 

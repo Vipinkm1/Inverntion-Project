@@ -198,50 +198,7 @@ li a:hover {
   font-size: 15px;
   line-height: 1.5rem;
 }
-
 /* services-section */
-.services-title{
-  text-align: center;
-  padding: 60px 0px 0px 0px;
-  text-decoration: underline;
-}
-.services-quotes{
-  text-align: center;
-  padding: 15px 0px 0px 0px;
-  font-size: 20px;
-  font-weight: 600;
-  color: rgb(6, 6, 63);
-}
-.services-image {
-  transition: transform 0.5s ease-in-out;
-}
-.services-item-list:hover {
-  transform: scale(1.1);
-  box-shadow: rgba(0, 0, 0, 0.7) 0px 10px 20px -5px;
-  height: auto;
-  transition: transform 0.5s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-/*  add here the list product  */
-.services-list{
-  display: grid;
-  grid-template-columns:  repeat(4, 1fr);
-  gap: 1rem;
-  padding: 50px 0px 50px 0px;
-}
-.services-item-list{
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-  border-radius: 10px;
-  transition:  tranform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  text-align: center;
-  cursor: pointer;
-}
-.services-title-name{
-  padding: 10px;
-}
-.services-item-list:hover {
-  transform: scale(1.1);
-  box-shadow: rgba(0, 0, 0, 0.7) 0px 10px 20px -5px;
-}
 .contact-btn {
   padding: 50px 0;
   display: flex;
@@ -252,7 +209,7 @@ li a:hover {
   text-align: center;
   background-color: rgb(82, 82, 235);
   border-radius: 5px;
-  width: 75%;
+  width: 100%;
   padding: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -289,8 +246,44 @@ li a:hover {
 .img-width-size{
  width: 50%;
 }
-/* Member section style */
 
+/* It experience section */
+.topex-2{
+  margin-top: 70px;
+}
+.fill-border{
+  height: 8px;
+  width: 600px;
+  border-radius: 2px;
+  background: rgb(115, 167, 212);
+}
+.it-services{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 0px;
+}
+.it-services-flex{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.grid-template{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+.grid-border{
+  width: 100%;
+}
+.services-img-add{
+  background: rgb(115, 167, 212);
+  border-radius: 2px;
+  width: 250px;
+}
+
+/* Member section style */
 /*  footer section design template here */
 .footer {
   width: 100%;
@@ -388,8 +381,6 @@ border-top:  1px solid  #ee6464;
 }
 .contact-form{
 padding: 30px 500px;
-
-
 }
 .contact-form-border{
 

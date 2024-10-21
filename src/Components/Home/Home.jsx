@@ -1,6 +1,6 @@
 import React from 'react'
 import HeroSection from '../Hero/HeroSection'
-import Services from '../Services/Services'
+
 
 
 const Home = () => {
@@ -8,7 +8,7 @@ const Home = () => {
     <>
         <div className='page'>
             <HeroSection/>
-            <Services/>
+            
         </div>
     </>
   )
