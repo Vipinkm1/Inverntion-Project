@@ -248,19 +248,31 @@ li a:hover {
 }
 
 /* It experience section */
+
 .topex-2{
   margin-top: 70px;
 }
+.experience-field{
+  width: 100%;
+}
+
+
 .fill-border{
-  height: 8px;
-  width: 600px;
-  border-radius: 2px;
+  border-radius: 3px;
   background: rgb(115, 167, 212);
+  padding: 5px;
+}
+.progress-bar{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
 }
 .it-services{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 40px;
   padding: 40px 0px;
 }
 .it-services-flex{
@@ -271,23 +283,38 @@ li a:hover {
 .grid-border{
   padding: 10px;
 }
-.grid-template{
-
-}
-
 .services-img-add{
   background: rgb(115, 167, 212);
-  border-radius: 5px;
+  border-radius: 2px;
   width:100%;
- 
+  cursor: pointer;
+}
+.services-img-add:hover{
+   transition: 0.6s ease-in-out;
+   zoom: 100%;
+   transform: scale(1.2);
+}
+
+.img-aspect-1{
+  border-radius: 2px;
+  cursor: pointer;
+  border: 1px solid rebeccapurple;
+  height: 150px;
+  background-color: black;
+}
+.p-bg{
+  background-color: #191133;
+  color: #fff;
+  padding: 10px;
 }
 /* Member section style */
 /*  footer section design template here */
 .footer {
   width: 100%;
  padding: 100px 0px 0px 0px;
- 
 }
+
+
 .footer-logo{
   width: 50%;
   padding: 10px 0px;
