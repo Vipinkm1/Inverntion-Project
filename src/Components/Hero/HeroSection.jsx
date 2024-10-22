@@ -12,7 +12,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 const HeroSection = () => {
 
-    //  scroll  animation when the user scroll the page
+
 
     useEffect(() => {
         AOS.init({
@@ -43,7 +43,7 @@ const HeroSection = () => {
     }
     return (
         <div className='page'>
-            <div className=' hero-section' data-aos= 'fade-up' >
+            <div className=' hero-section' data-aos='fade-up' >
                 <div className='hero-section-item'>
                     <motion.div className='section'
                         initial={{ opacity: 0, x: -100 }}
@@ -70,7 +70,7 @@ const HeroSection = () => {
                     <Lottie animationData={Frontend} loop={true} />
                 </div>
             </div>
-            <div className='hero-section' data-aos= 'fade-up'>
+            <div className='hero-section' data-aos='fade-up'>
                 <img src={Hero} />
                 <div className='some-about-content'>
                     <p className='secure-it font'>About Invention It Solution</p>
@@ -97,7 +97,7 @@ const HeroSection = () => {
                     </div>
                 </div>
             </div>
-            <div className='contact-btn topex-2' data-aos = 'fade-left'>
+            <div className='contact-btn topex-2' data-aos='fade-left'>
                 <div className='container-1'>
                     <div>
                         <h1 className='container-p font'>Let our incredible team assist you with Website Development</h1>
@@ -109,6 +109,8 @@ const HeroSection = () => {
                         <button className='button-1'>Contact Us</button>
                     </div>
                 </div>
+            
+            {/*   */}
             </div>
             <div className='topex-2' data-aos='fade-right'>
                 <h1 className='color font hero-font copyright  '>More Than 24+ Years Experience<br /> We Provide <span className='span'>IT Services</span></h1>
@@ -116,61 +118,61 @@ const HeroSection = () => {
                 <div className='it-services '>
                     <div className='experience-field'>
                         <p>Web Development</p>
-                         <div className='progress-bar'>
-                        <div className='fill-border topex' style={{ width: '25%' }}></div>
-                        <p>25%</p>
+                        <div className='progress-bar'>
+                            <div className='fill-border topex' style={{ width: '25%' }}></div>
+                            <p>25%</p>
                         </div>
                         <p className='topex'>E-Commerce Excutive</p>
                         <div className='progress-bar'>
-                        <div className='fill-border topex' style = {{width: '75%'}}></div>
-                        <p>75%</p>
+                            <div className='fill-border topex' style={{ width: '75%' }}></div>
+                            <p>75%</p>
                         </div>
                         <p className='topex'>Software Development</p>
                         <div className='progress-bar'>
-                        <div className='fill-border topex' style={{ width: '100%'}}></div>
-                        <p>100%</p>
+                            <div className='fill-border topex' style={{ width: '100%' }}></div>
+                            <p>100%</p>
                         </div>
                         <p className='topex'>Digital Marketing</p>
                         <div className='progress-bar'>
-                        <div className='fill-border topex' style={{width: '65%'}}></div>
-                        <p>65%</p>
+                            <div className='fill-border topex' style={{ width: '65%' }}></div>
+                            <p>65%</p>
                         </div>
                         <p className='topex'>Search Engine Marketing</p>
                         <div className='progress-bar'>
-                        <div className='fill-border topex' style ={{width: '40%'}}></div>
-                        <p>40%</p>
+                            <div className='fill-border topex' style={{ width: '40%' }}></div>
+                            <p>40%</p>
                         </div>
                     </div>
                     <div className='experience-field'>
                         <p>CMS Tool</p>
                         <div className='progress-bar'>
-                        <div className='fill-border topex' style={{width: '20%'}}></div>
-                        <p>20%</p>
+                            <div className='fill-border topex' style={{ width: '20%' }}></div>
+                            <p>20%</p>
                         </div>
                         <p className='topex'>Costom Design</p>
                         <div className='progress-bar'>
-                        <div className='fill-border topex' style={{width: '65%'}}></div>
-                        <p>65%</p>
+                            <div className='fill-border topex' style={{ width: '65%' }}></div>
+                            <p>65%</p>
                         </div>
                         <p className='topex'>Web design</p>
                         <div className='progress-bar'>
-                        <div className='fill-border topex' style={{width: '70%'}}></div>
-                        <p>70%</p>
+                            <div className='fill-border topex' style={{ width: '70%' }}></div>
+                            <p>70%</p>
                         </div>
                         <p className='topex'>Magneto Website</p>
-                        <div  className='progress-bar'>
-                        <div className='fill-border topex' style={{width: '95%'}}></div>
-                        <p>95%</p>
+                        <div className='progress-bar'>
+                            <div className='fill-border topex' style={{ width: '95%' }}></div>
+                            <p>95%</p>
                         </div>
                         <p className='topex'>Costom Website</p>
                         <div className='progress-bar'>
-                        <div className='fill-border topex' style={{width: '100%'}}></div>
-                        <p>100%</p>
+                            <div className='fill-border topex' style={{ width: '100%' }}></div>
+                            <p>100%</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className='topex-2' data-aos = 'fade-up'>
+            <div className='topex-2' data-aos='fade-up'>
                 <p className='secure-it font'>What we do</p>
                 <div className='it-services-flex'>
                     <h1 className='color font hero-font'>We Provide Exclusive Service <br />For
@@ -182,7 +184,7 @@ const HeroSection = () => {
             <div className='grid-template'>
                 <Slider {...sliderSettings}>
                     {services.map((services) => (
-                        <div className='grid-border topex-2' data-aos ='zoom-in' key={services.id}>
+                        <div className='grid-border topex-2' data-aos='zoom-in' key={services.id}>
                             <div className='img-aspect'>
                                 <img className='services-img-add' src={services.Img} />
                             </div>

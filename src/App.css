@@ -282,6 +282,7 @@ li a:hover {
 }
 .grid-border{
   padding: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .services-img-add{
   background: rgb(115, 167, 212);
