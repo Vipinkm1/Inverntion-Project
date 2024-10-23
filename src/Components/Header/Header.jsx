@@ -4,16 +4,16 @@ import { Link } from 'react-router-dom'
 
 const Header = () => {
   return (
-    <div className='header'>
+  <div className='page'>
+    <div className='header '>
       <div className='navbar'>
         <div className='nav-logo'>
           <img src={navlogo} alt='nav-logo' className='logo-name' />
         </div>
-        
         <div className='nav-item'>
           <ul className='nav-links'>
             <li><Link to='/' href='#home'>Home</Link></li>
-            <li><a href='#about'>About</a></li>
+            <li><Link to='/about'>About</Link></li>
             <li><a href='#services'>Services</a></li>
             <li><Link to='/contact' href='#contact'>Contact</Link></li>
             <li><a href='#blog'>Blog</a></li>
@@ -23,7 +23,7 @@ const Header = () => {
         </div>
       </div>
     </div>
+    </div>
   )
 }
-
 export default Header

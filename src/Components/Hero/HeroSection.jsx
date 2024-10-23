@@ -10,10 +10,8 @@ import { motion } from 'framer-motion'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+
 const HeroSection = () => {
-
-
-
     useEffect(() => {
         AOS.init({
             duration: 1000,
@@ -29,7 +27,6 @@ const HeroSection = () => {
         { id: 1, Img: Digi, title: 'E-Commerce Executive', description: 'The best web developers dont just build websites' },
         { id: 1, Img: Digi, title: 'Seo', description: 'The best web developers dont just build websites' },
     ]
-
     const sliderSettings = {
         dots: false,
         infinite: true,
@@ -109,8 +106,6 @@ const HeroSection = () => {
                         <button className='button-1'>Contact Us</button>
                     </div>
                 </div>
-            
-            {/*   */}
             </div>
             <div className='topex-2' data-aos='fade-right'>
                 <h1 className='color font hero-font copyright  '>More Than 24+ Years Experience<br /> We Provide <span className='span'>IT Services</span></h1>
@@ -197,8 +192,8 @@ const HeroSection = () => {
                     ))}
                 </Slider>
             </div>
+
         </div>
     )
 }
-
 export default HeroSection

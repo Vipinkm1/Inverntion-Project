@@ -19,11 +19,11 @@
     opacity: 1;
   }
 }
-/* Add your existing styles for the hero section elements here */
-.header {
 
+.header {
   animation: slideIn 1s ease-out;
   padding: 20px 0px 0px 0px;
+
 }
 .logo-name {
   width: 20%;
@@ -32,6 +32,7 @@
   display: flex;
   justify-content: space-between;
   align-self: center;
+
 }
 .nav-links {
   display: flex;
@@ -409,20 +410,15 @@ border-top:  1px solid  #ee6464;
 padding: 30px 500px;
 }
 .contact-form-border{
-
   padding: 25px;
   background-color: #191133;
-  border-radius: 2px;
-
-  
+  border-radius: 2px;  
 }
 .form-input{
   display: flex;
   flex-direction: column;
   width: 100%;
   background-color: #191133;
-
-  
 }
 .input-width{
  margin-top: 10px;
@@ -433,8 +429,8 @@ padding: 30px 500px;
  border: none;
  outline: none;
  border-radius: 2px;
-
 }
+
 .input-title{
   margin-top: 10px;
   background-color: #191133;
@@ -453,6 +449,14 @@ padding: 30px 500px;
 .button-3{
   background-color: #fff;
   color: black;
+}
+.about-banner-img{
+  width: 100%
+}
+.about-section{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 
