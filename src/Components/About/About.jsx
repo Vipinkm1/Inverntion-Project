@@ -15,8 +15,6 @@ const About = () => {
     const [count3, setCount3] = useState(0)
     const [count4, setCount4] = useState(0)
 
-
-
     useEffect(() => {
         const projectInterval = setInterval(() => {
             setCount1(prev => {
@@ -36,7 +34,6 @@ const About = () => {
                 return prev + 1;
             })
         }, 56)
-
         const projectInterval3 = setInterval(() => {
             setCount3(prev => {
                 if (prev >= 30) {
@@ -97,6 +94,7 @@ const About = () => {
                             <button className='button-1 font'>Discover More</button>
                         </div>
                     </div>
+             
                 </div>
                 <div className='project-completion'>
                     <div className='project-completion-item'>
@@ -106,6 +104,7 @@ const About = () => {
                                 <h1 className='project-content'>{count1}+</h1>
                                 <p className=' topex project-content color-1'>Project Completion</p>
                             </div>
+
                         </div>
                         <div className='project-item-list'>
                             <TbMoodCrazyHappy className='icon-size' />
@@ -160,10 +159,10 @@ const About = () => {
                             <div className='content-container-1'>
                                 <h2>Rakshita Kumar</h2>
                                 <p className='topex'>Web Developer</p>
-                                
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>

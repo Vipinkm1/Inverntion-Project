@@ -12,7 +12,7 @@ import { MdEmail } from "react-icons/md";
 
 const Footer = () => {
   return (
-    <div className='footer'>
+    <div className=' page'>
       <div className='footer-flex'>
         <div className='footer-container-1'>
           <h2 className='heading  footer-heading'>Why Us</h2>
@@ -20,7 +20,6 @@ const Footer = () => {
             <img src={navlogo} alt='nav-logo' className='logo-name footer-logo' />
             <p className=' para1'>At Invention, creativity isn’t just a part of our process; it’s at the core of who we are. We are a creative agency where imagination meets innovation. If you can think it, we can make it happen.</p>
           </div>
-          {/*   */}
         </div>
         <div className='footer-container-2'>
           <h2 className='heading   color font'>Our Services</h2>

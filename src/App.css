@@ -64,7 +64,8 @@ li a:hover {
   border-radius: 2px;
   border: none;
   transition: background-color 0.3s, transform 0.3s;
-  cursor: pointer
+  cursor: pointer;
+
 }
 .btn-1:hover {
   background-color: rgb(95, 147, 192);
@@ -443,7 +444,6 @@ padding: 30px 500px;
   width: 100%;
   padding: 10px;
   background: rgb(115, 167, 212);
-
   border: none;
   outline: none;
   border-radius: 2px;
@@ -467,7 +467,7 @@ padding: 30px 500px;
   border: 1px solid #b3b1b1;
   width: 100%;
   height: 250px;
-  padding: 80px 60px;
+  padding: 40px 60px;
   border-radius: 2px;
   background-color: #191133;
 }
@@ -503,7 +503,6 @@ padding: 30px 500px;
   gap:  20px;
   margin-top: 20px;
 }
-
 .team{
   width: 100%;
   height: 300px;
@@ -511,7 +510,7 @@ padding: 30px 500px;
   cursor: pointer;
 }
 .team-member{
-  padding-top:  50px;
+  padding-top:  60px;
   text-align: center;
 }
 .content-container-1{
