@@ -67,7 +67,7 @@ const HeroSection = () => {
                     <Lottie animationData={Frontend} loop={true} />
                 </div>
             </div>
-            <div className='hero-section' data-aos='fade-up'>
+            <div className='hero-flex topex-2' data-aos='fade-up'>
                 <img src={Hero} />
                 <div className='some-about-content'>
                     <p className='secure-it font'>About Invention It Solution</p>

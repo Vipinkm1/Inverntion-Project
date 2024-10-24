@@ -8,7 +8,6 @@ const Home = () => {
     <>
         <div className='page'>
             <HeroSection/>
-            
         </div>
     </>
   )

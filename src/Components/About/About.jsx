@@ -7,6 +7,7 @@ import { GrDocumentPerformance } from "react-icons/gr";
 import { TbMoodCrazyHappy } from "react-icons/tb";
 import { GrUserExpert } from "react-icons/gr";
 import { LiaAwardSolid } from "react-icons/lia";
+import Digi from '../../assets/service/digital-marketing-services.jpeg'
 
 const About = () => {
     const [count1, setCount1] = useState(0)
@@ -15,54 +16,53 @@ const About = () => {
     const [count4, setCount4] = useState(0)
 
 
-   useEffect(() => {
-    const projectInterval = setInterval(() => {
-        setCount1(prev => {
-            if(prev >= 54){
-                clearInterval(projectInterval);
-                return prev;
-            }
-            return prev + 1;
-        })
-    }, 54);
 
-    const  projectInterval2 = setInterval(() => {
-        setCount2(prev => {
-            if(prev >= 56){
-                clearInterval*(projectInterval2);
-                return prev;
-            }
-            return prev + 1;
-        })
-    }, 56)
+    useEffect(() => {
+        const projectInterval = setInterval(() => {
+            setCount1(prev => {
+                if (prev >= 54) {
+                    clearInterval(projectInterval);
+                    return prev;
+                }
+                return prev + 1;
+            })
+        }, 54);
+        const projectInterval2 = setInterval(() => {
+            setCount2(prev => {
+                if (prev >= 56) {
+                    clearInterval * (projectInterval2);
+                    return prev;
+                }
+                return prev + 1;
+            })
+        }, 56)
 
-    const projectInterval3 = setInterval(() => {
-        setCount3(prev => {
-            if(prev >= 30){
-                clearInterval(projectInterval3);
-                return prev;
-            }
-            return prev + 1;
-        })
-    }, 30)
+        const projectInterval3 = setInterval(() => {
+            setCount3(prev => {
+                if (prev >= 30) {
+                    clearInterval(projectInterval3);
+                    return prev;
+                }
+                return prev + 1;
+            })
+        }, 30)
 
-     const projectInterval4 = setInterval(() => {
-        setCount4(prev => {
-            if(prev > 130){
-                clearInterval(projectInterval4);
-                return prev;
-            }
-            return prev + 1;
-        })
-     }, 130)
-     return () => {
-        clearInterval(projectInterval);
-        clearInterval(projectInterval2);
-        clearInterval(projectInterval3);
-        clearInterval(projectInterval4);
-     }
-   })
-
+        const projectInterval4 = setInterval(() => {
+            setCount4(prev => {
+                if (prev > 130) {
+                    clearInterval(projectInterval4);
+                    return prev;
+                }
+                return prev + 1;
+            })
+        }, 130)
+        return () => {
+            clearInterval(projectInterval);
+            clearInterval(projectInterval2);
+            clearInterval(projectInterval3);
+            clearInterval(projectInterval4);
+        }
+    })
     return (
         <div className='about-container'>
             <div className=''>
@@ -101,7 +101,7 @@ const About = () => {
                 <div className='project-completion'>
                     <div className='project-completion-item'>
                         <div className='project-item-list'>
-                            <GrDocumentPerformance className='icon-size'/>
+                            <GrDocumentPerformance className='icon-size' />
                             <div className='project-content'>
                                 <h1 className='project-content'>{count1}+</h1>
                                 <p className=' topex project-content color-1'>Project Completion</p>
@@ -126,6 +126,41 @@ const About = () => {
                             <div className='project-content'>
                                 <h1 className='project-content'>{count4}+</h1>
                                 <p className=' topex project-content color-1'>Honorable Awards</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className='team-member'>
+                    <h2 className='topex'>Meet Our Team</h2>
+                    <h1 className='color font  topex'>See Our Skilled <span className='span'> Expert Team</span></h1>
+                    <div className='team-img topex'>
+                        <div className='team-img-1'>
+                            <img className='team' src={Digi} />
+                            <div className='content-container-1'>
+                                <h2>Atma Kumar</h2>
+                                <p className='topex'>Web Developer</p>
+                            </div>
+                        </div>
+                        <div className='team-img-1'>
+                            <img className='team' src={Digi} />
+                            <div className='content-container-1'>
+                                <h2>Bhoot Kumar</h2>
+                                <p className='topex'> Web Developer</p>
+                            </div>
+                        </div>
+                        <div className='team-img-1'>
+                            <img className='team' src={Digi} />
+                            <div className='content-container-1'>
+                                <h2>Saitan Kumar</h2>
+                                <p className='topex'>Web Developer</p>
+                            </div>
+                        </div>
+                        <div className='team-img-1'>
+                            <img className='team' src={Digi} />
+                            <div className='content-container-1'>
+                                <h2>Rakshita Kumar</h2>
+                                <p className='topex'>Web Developer</p>
+                                
                             </div>
                         </div>
                     </div>
