@@ -22,6 +22,7 @@ const Footer = () => {
           </div>
         </div>
         <div className='footer-container-2'>
+        
           <h2 className='heading   color font'>Our Services</h2>
           <div className='some-content'>
             <div className='footer-services textBig para1'>Web Developement</div>

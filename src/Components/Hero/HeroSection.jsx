@@ -10,7 +10,6 @@ import { motion } from 'framer-motion'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-
 const HeroSection = () => {
     useEffect(() => {
         AOS.init({
@@ -19,6 +18,8 @@ const HeroSection = () => {
             easing: 'ease-in-out',
         })
     }, [])
+
+    const [progressFilled, setProgressFilled] = useState(false)
     const services = [
         { id: 1, Img: Digi, title: 'Web Development', description: 'The best web developers dont just build websites.' },
         { id: 1, Img: Digi, title: 'Software Development', description: 'The best web developers dont just build websites ' },
@@ -38,6 +39,42 @@ const HeroSection = () => {
         arrows: false,
         cssEase: "ease-in-out"
     }
+
+    //  show the progress fill
+
+    const progresRefs = useRef([])
+
+    useEffect(() => {
+        const options = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        }
+
+        const observer  = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    setProgressFilled(true)
+                    observer.unobserve(entry.target)
+                }
+            })
+        }, options)
+
+        const currentRefs = progresRefs.current;
+        currentRefs.forEach((ref) => {
+            if (ref) {
+                observer.observe(ref)
+            }
+        })
+          return () => {
+            currentRefs.forEach(ref => {
+                if(ref){
+                    observer.unobserve(ref)
+                }
+            })
+          }
+    }, [])
+
     return (
         <div className='page'>
             <div className=' hero-section' data-aos='fade-up' >

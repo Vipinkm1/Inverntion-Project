@@ -9,6 +9,7 @@ import { GrUserExpert } from "react-icons/gr";
 import { LiaAwardSolid } from "react-icons/lia";
 import Digi from '../../assets/service/digital-marketing-services.jpeg'
 
+
 const About = () => {
     const [count1, setCount1] = useState(0)
     const [count2, setCount2] = useState(0)
@@ -24,7 +25,7 @@ const About = () => {
                 }
                 return prev + 1;
             })
-        }, 54);
+     }, 54);
         const projectInterval2 = setInterval(() => {
             setCount2(prev => {
                 if (prev >= 56) {
@@ -43,7 +44,7 @@ const About = () => {
                 return prev + 1;
             })
         }, 30)
-
+        
         const projectInterval4 = setInterval(() => {
             setCount4(prev => {
                 if (prev > 130) {
@@ -94,7 +95,6 @@ const About = () => {
                             <button className='button-1 font'>Discover More</button>
                         </div>
                     </div>
-             
                 </div>
                 <div className='project-completion'>
                     <div className='project-completion-item'>
@@ -104,7 +104,6 @@ const About = () => {
                                 <h1 className='project-content'>{count1}+</h1>
                                 <p className=' topex project-content color-1'>Project Completion</p>
                             </div>
-
                         </div>
                         <div className='project-item-list'>
                             <TbMoodCrazyHappy className='icon-size' />
