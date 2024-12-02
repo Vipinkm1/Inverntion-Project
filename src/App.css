@@ -43,6 +43,7 @@ width: 150px;
   display: flex;
   list-style-type: none; 
 }
+
 li {
   margin-left: 1.5rem;
 }
@@ -325,8 +326,7 @@ li a:hover {
   color: #fff;
   padding: 10px;
 }
-/* Member section style */
-/*  footer section design template here */
+
 .footer {
   width: 100%;
  padding: 100px 0px 0px 0px;
@@ -521,6 +521,11 @@ padding: 30px 500px;
 }
 .support-center{
   text-align: center;
+  border: 1px solid #000;
+  padding: 10px;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  background-color: #26194a;
 }
 .support-item{
   display: flex;
@@ -574,6 +579,34 @@ padding: 30px 500px;
 }
 .background-Remover{
    background: none;
+}
+.test-1{
+  width:  60%;
+  border-color: 2px solid bisque;
+  border-radius:  100px;
+  background-color: #cdcdcd;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  position: relative;
+}
+.test-2{
+  width: 100%;
+  padding: 40px;
+  margin-top: -50px;
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+ 
+}
+.rating{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 5px;
+
+}
+
+.profile-size-1{
+  width: 100px;;
+  border-radius: 50%
 }
 .flex-row-col{
    display: flex;
