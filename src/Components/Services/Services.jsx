@@ -6,6 +6,7 @@ import Profile from '../../assets/service/33395.jpg';
 import { FcRating } from "react-icons/fc";
 
 const Services = () => {
+    
     return (
         <div className='about-container '>
             <div className=''>
@@ -79,72 +80,72 @@ const Services = () => {
                     <h3 className='font copyright secure-it'>Client Testimonials</h3>
                     <h1 className='color font hero-font copyright  '>What They’re <span className='span'>Talking?</span></h1>
                     <div className='testimonial checkbox-flex topex-2'>
-                    <div className=''>
-                        <div className='test-1'>
-                            <div className='img-profile checkbox-flex'>
-                                <img src={Profile} className='profile-size-1' />
-                                <div className=''>
-                                    <p>Vipin Kumar</p>
-                                    <p>Software Developer</p>
+                        <div className=''>
+                            <div className='test-1'>
+                                <div className='img-profile checkbox-flex'>
+                                    <img src={Profile} className='profile-size-1' />
+                                    <div className=''>
+                                        <p>Vipin Kumar</p>
+                                        <p>Software Developer</p>
+                                    </div>
                                 </div>
-                            </div>
 
-                        </div>
-                        <div className='test-2'>
-                        <div className='rating'>
-                         <FcRating/>
-                         <FcRating/>
-                         <FcRating/>
-                         <FcRating/>
-                        </div>
-                            <p className='font-size-1 topex'>
-                                Infetech is a professional IT Company that always creates quality software for clients. If you are looking for a team of talent developers to find out the best IT solutions, Infetech is a company that your team should consider.										</p>
-                        </div>
-                    </div>
-                    <div className=''>
-                        <div className='test-1'>
-                            <div className='img-profile checkbox-flex'>
-                                <img src={Profile} className='profile-size-1' />
-                                <div className=''>
-                                    <p>Vipin Kumar</p>
-                                    <p>Software Developer</p>
+                            </div>
+                            <div className='test-2'>
+                                <div className='rating'>
+                                    <FcRating />
+                                    <FcRating />
+                                    <FcRating />
+                                    <FcRating />
                                 </div>
+                                <p className='font-size-1 topex'>
+                                    Infetech is a professional IT Company that always creates quality software for clients. If you are looking for a team of talent developers to find out the best IT solutions, Infetech is a company that your team should consider.										</p>
                             </div>
-
                         </div>
-                        <div className='test-2'>
-                        <div className='rating'>
-                         <FcRating/>
-                         <FcRating/>
-                         <FcRating/>
-                         <FcRating/>
-                        </div>
-                            <p className='font-size-1 topex'>
-                                Infetech is a professional IT Company that always creates quality software for clients. If you are looking for a team of talent developers to find out the best IT solutions, Infetech is a company that your team should consider.										</p>
-                        </div>
-                    </div>
-                    <div className=''>
-                        <div className='test-1'>
-                            <div className='img-profile checkbox-flex'>
-                                <img src={Profile} className='profile-size-1' />
-                                <div className=''>
-                                    <p>Vipin Kumar</p>
-                                    <p>Software Developer</p>
+                        <div className=''>
+                            <div className='test-1'>
+                                <div className='img-profile checkbox-flex'>
+                                    <img src={Profile} className='profile-size-1' />
+                                    <div className=''>
+                                        <p>Vipin Kumar</p>
+                                        <p>Software Developer</p>
+                                    </div>
                                 </div>
-                            </div>
 
+                            </div>
+                            <div className='test-2'>
+                                <div className='rating'>
+                                    <FcRating />
+                                    <FcRating />
+                                    <FcRating />
+                                    <FcRating />
+                                </div>
+                                <p className='font-size-1 topex'>
+                                    Infetech is a professional IT Company that always creates quality software for clients. If you are looking for a team of talent developers to find out the best IT solutions, Infetech is a company that your team should consider.										</p>
+                            </div>
                         </div>
-                        <div className='test-2'>
-                        <div className='rating'>
-                         <FcRating/>
-                         <FcRating/>
-                         <FcRating/>
-                         <FcRating/>
+                        <div className=''>
+                            <div className='test-1'>
+                                <div className='img-profile checkbox-flex'>
+                                    <img src={Profile} className='profile-size-1' />
+                                    <div className=''>
+                                        <p>Vipin Kumar</p>
+                                        <p>Software Developer</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div className='test-2'>
+                                <div className='rating'>
+                                    <FcRating />
+                                    <FcRating />
+                                    <FcRating />
+                                    <FcRating />
+                                </div>
+                                <p className='font-size-1 topex'>
+                                    Infetech is a professional IT Company that always creates quality software for clients. If you are looking for a team of talent developers to find out the best IT solutions, Infetech is a company that your team should consider.										</p>
+                            </div>
                         </div>
-                            <p className='font-size-1 topex'>
-                                Infetech is a professional IT Company that always creates quality software for clients. If you are looking for a team of talent developers to find out the best IT solutions, Infetech is a company that your team should consider.										</p>
-                        </div>
-                    </div>
                     </div>
                 </div>
             </div>
