@@ -13,6 +13,7 @@ const Contact = () => {
             <label className='input-title'>Name</label>
             <input type='text' placeholder='Enter your name' className='input-width' />
           </div>
+
           <div className='form-input'>
             <label className='input-title'>Email</label>
             <input type='text' placeholder='Enter your name' className='input-width' />
@@ -27,9 +28,7 @@ const Contact = () => {
           </div>
           <button className='button-1  input-title button-3'>Submit Now</button>
         </form>
-    </div>
-  
-
+      </div>
     </div>
   )
 }

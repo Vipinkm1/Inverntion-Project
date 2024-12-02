@@ -12,8 +12,8 @@ import { MdEmail } from "react-icons/md";
 
 const Footer = () => {
   return (
-    <div className=' page'>
-      <div className='footer-flex'>
+    <div className=' page topex-2'>
+      <div className='footer-flex '>
         <div className='footer-container-1'>
           <h2 className='heading  footer-heading'>Why Us</h2>
           <div className='some-content'>

@@ -5,18 +5,18 @@ import Home from './Components/Home/Home'
 import Contact from './Components/Contact/Contact'
 import About from './Components/About/About'
 import Layout from './Components/Layout/Layout'
+import Services from './Components/Services/Services'
 
 function App() {
   return (
     <>
-    {/* Find the path value is here */}
       <BrowserRouter>
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path ='/contact' element={<Contact/>} />
           <Route path='/about' element={<About />} />
-          
+          <Route path='/services' element={<Services/>}/>
         </Routes>
         </Layout>
       </BrowserRouter>
