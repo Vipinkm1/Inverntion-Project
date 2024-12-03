@@ -5,6 +5,8 @@
  background: #fcfcfc;
  font-family: Arial, Helvetica, sans-serif, ;
 }
+
+
 .page{
  padding:  0px 40px 0px 40px;
 }
@@ -57,7 +59,6 @@ li a {
 li a:hover {
   color: rgb(115, 167, 212);
   transform: scale(1.1);
-
 }
 .btn-1 {
  padding: 10px;
@@ -214,7 +215,7 @@ li a:hover {
 }
 .container-1 {
   text-align: center;
-  background-color: rgb(82, 82, 235);
+  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
   border-radius: 5px;
   width: 100%;
   padding: 20px;
@@ -223,14 +224,14 @@ li a:hover {
 .container-p,
 .container-a {
   margin-bottom: 10px;
-  background: rgb(82, 82, 235);
+  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
   color: rgb(221, 186, 186);
 }
 .container-p {
   font-size: 24px;
   font-weight: bold;
   color: #fff;
-  background: rgb(82, 82, 235);
+  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
 }
 .container-a {
   font-size: 18px;
@@ -240,7 +241,7 @@ li a:hover {
   align-items: center;
   justify-content: center;
   padding: 30px 0;
-  background: rgb(82, 82, 235);
+  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
 }
 .right {
   margin-right: 10px;
@@ -307,7 +308,6 @@ li a:hover {
   width:100%;
   cursor: pointer;
 }
-
 .services-img-add:hover{
    transition: 0.6s ease-in-out;
    zoom: 100%;
@@ -498,6 +498,7 @@ border-top:  1px solid  #ee6464;
  border: 1px solid #b3b1b1; 
   width: 100%;
 }
+
 .service-container{
   display: flex;
   justify-content: start;
@@ -587,9 +588,7 @@ border-top:  1px solid  #ee6464;
   align-items: center;
   justify-content: end;
   gap: 5px;
-
 }
-
 .profile-size-1{
   width: 100px;;
   border-radius: 50%
@@ -600,34 +599,74 @@ border-top:  1px solid  #ee6464;
    gap: 20px;
    background-color: #cfcaca;
 }
-@media(max-width: 550px){
-  .page{
-    padding: 0px  10px;
-  }
-  .logo-name{
-    display: none;
-  }
-  .navbar{
-    display: block;
-
-  }
-  .nav-item{
+/*  signup section */
+   .popup{
     width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+      display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+
+  .radio-flex{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+  }
+  .label-width{
+    font-size: 15px;
+    font-family: 'oswald', sans-serif;
+  }
+  /*  add css module */
+  .radio-size{
+  font-size: 25px;
+  font-weight: 600;
+  }
+  .border-1{
+    padding: 15px 20px;
+    margin-top:  100px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    width: 30%;
+  }
+  .text-center{
     text-align: center;
-    margin-top: 10px;
+    font-size: 25px;
   }
-  .nav-links{
-    display: inline-block;
+  .form-container{
+     display: flex;
+     flex-direction: column;
+     gap: 15px;
   }
-  .lnk-size{
-    margin-top: 10px;
-    margin-left: 0px;
+  .input-width{
+    padding: 10px;
+    width: 100%;
+    border-color: #fff;
+    outline: none;
+    border-radius: 5px;
   }
-  .hero-section{
-    padding-top: 10px;
-  }   
-}
-
-
-
- 
+  .input-width::placeholder{
+    color:  rgb(224, 179, 179);
+  }
+  .btn-3{
+     text-align: center;
+     background: #fff;
+  }
+  .btn-width{
+    padding: 10px;
+    width: 40%;
+    background-color: #000;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    cursor: pointer;
+    color: #fff;
+  }
+  .spanish{
+    color: red;
+    cursor: pointer;
+  }

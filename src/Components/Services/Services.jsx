@@ -5,6 +5,7 @@ import { MdOutlineSupportAgent } from "react-icons/md";
 import Profile from '../../assets/service/33395.jpg';
 import { FcRating } from "react-icons/fc";
 
+
 const Services = () => {
     
     return (
@@ -89,7 +90,6 @@ const Services = () => {
                                         <p>Software Developer</p>
                                     </div>
                                 </div>
-
                             </div>
                             <div className='test-2'>
                                 <div className='rating'>
@@ -147,6 +147,8 @@ const Services = () => {
                             </div>
                         </div>
                     </div>
+                </div>
+                <div className='jatu'>
                 </div>
             </div>
         </div>

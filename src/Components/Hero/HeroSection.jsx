@@ -19,6 +19,7 @@ const HeroSection = () => {
             easing: 'ease-in-out',
         })
     }, [])
+    
     const [progressFilled, setProgressFilled] = useState([])
     const services = [
         { id: 1, Img: Digi, title: 'Web Development', description: 'The best web developers dont just build websites.' },
@@ -28,6 +29,8 @@ const HeroSection = () => {
         { id: 1, Img: Digi, title: 'E-Commerce Executive', description: 'The best web developers dont just build websites' },
         { id: 1, Img: Digi, title: 'Seo', description: 'The best web developers dont just build websites' },
     ]
+
+
     const sliderSettings = {
         dots: false,
         infinite: true,
@@ -38,6 +41,7 @@ const HeroSection = () => {
         autoplaySpeed: 2000,
         arrows: false,
     } 
+
     const progresRefs = useRef([])
     useEffect(() => {
         const options = {
@@ -45,6 +49,7 @@ const HeroSection = () => {
             rootMargin: '0px',
             threshold: 0.1
         }
+        
         const observer  = new IntersectionObserver((entries) => {
           entries.forEach((entry) => {
             const index = progresRefs.current.indexOf(entry.target);
@@ -209,7 +214,6 @@ const HeroSection = () => {
                     <button className='button-1'>View All Services</button>
                 </div>
             </div>
-            {/* check  */}
             <div className='grid-template'>
                 <Slider {...sliderSettings}>
                     {services.map((services) => (

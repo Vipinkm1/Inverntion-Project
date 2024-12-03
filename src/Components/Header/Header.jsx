@@ -1,16 +1,20 @@
 import React from 'react'
 import navlogo from '../../assets/invention-logo.png'
-import { Link } from 'react-router-dom'
-// import { GiHamburgerMenu } from "react-icons/gi";
+import { Link, useNavigate } from 'react-router-dom'
 
 
-const Header = () => (
+const Header = () => {
+  const navigate = useNavigate()
+
+  const handleSignup = () => {
+    navigate('/signup')
+  }
+  return (
   <div className='page'>
     <div className='header '>
       <div className='navbar'>
         <div className='nav-logo'>
           <img src={navlogo} alt='nav-logo' className='logo-name' />
-          {/* <GiHamburgerMenu className='hamburger' /> */}
         </div>
         <div className='nav-item'>
           <ul className='nav-links'>
@@ -19,12 +23,14 @@ const Header = () => (
             <li className='lnk-size'><a className='lnk-size-2' href='/services'>Services</a></li>
             <li className='lnk-size'><Link className='lnk-size-2' to='/contact' href='#contact'>Contact</Link></li>
             <li className='lnk-size'><a className='lnk-size-2' href='#blog'>Blog</a></li>
-            <li className='btn-li lnk-size'><button className='btn-1'>SignUp</button></li>
-            <li className='btn-li lnk-size'><button className='btn-1'>SignIn</button></li>
+            <li className='btn-li lnk-size'><button onClick={handleSignup} className='btn-1'>SignUp</button></li>
+            <li className='btn-li lnk-size'><button  className='btn-1'>SignIn</button></li>
           </ul>
         </div>
       </div>
     </div>
   </div>
+
 )
+}
 export default Header

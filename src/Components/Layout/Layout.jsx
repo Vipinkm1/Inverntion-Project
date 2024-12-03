@@ -1,18 +1,21 @@
 import React from 'react'
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
+import { useLocation } from 'react-router-dom';
 
 
 const Layout = ({children}) => {
+  const location = useLocation()
+  const hideHeaderFooter = ['/signup']
+  const shouldhideHeaderFooter = hideHeaderFooter.includes(location.pathname)
   return (
     <div className=''>
-      <Header />
+     {!shouldhideHeaderFooter && <Header />}
       <main>
         {children}
       </main>
-      <Footer/>
+      {!shouldhideHeaderFooter && <Footer/>}
     </div>
   )
 }
-
 export default Layout
