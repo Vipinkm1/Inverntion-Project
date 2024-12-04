@@ -9,6 +9,7 @@ const Signup = () => {
         confirmpassword: '',
         gender: ''
     })
+
     const handleChange = (e) => {
         const { name, value } = e.target;
         setSignUp((prevState) => ({
@@ -25,6 +26,7 @@ const Signup = () => {
         navigate('/login')
         console.log('Login sucessfully')
     }
+
     return (
         <div className='popup'>
             <div className='border-1'>
@@ -63,7 +65,6 @@ const Signup = () => {
                 <p className='topex'>Already Register?<span onClick={handleLogin} className='spanish'>Login</span></p>
             </div>
         </div>
-
     )
 }
 export default Signup

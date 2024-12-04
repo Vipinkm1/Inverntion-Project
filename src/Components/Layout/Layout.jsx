@@ -3,10 +3,9 @@ import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import { useLocation } from 'react-router-dom';
 
-
 const Layout = ({children}) => {
   const location = useLocation()
-  const hideHeaderFooter = ['/signup']
+  const hideHeaderFooter = ['/signup', '/login']
   const shouldhideHeaderFooter = hideHeaderFooter.includes(location.pathname)
   return (
     <div className=''>
