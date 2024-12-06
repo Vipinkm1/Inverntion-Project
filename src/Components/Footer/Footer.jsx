@@ -9,7 +9,6 @@ import { MdPhone } from "react-icons/md";
 import { GrLocation } from "react-icons/gr";
 import { MdEmail } from "react-icons/md";
 
-
 const Footer = () => {
   return (
     <div className=' page topex-2'>
@@ -22,7 +21,7 @@ const Footer = () => {
           </div>
         </div>
         <div className='footer-container-2'>
-        
+
           <h2 className='heading   color font'>Our Services</h2>
           <div className='some-content'>
             <div className='footer-services textBig para1'>Web Developement</div>
@@ -77,7 +76,7 @@ const Footer = () => {
       </div>
       {/*  another content */}
       <div className='footer-container-3'>
-        <h2 className='heading  footer-services copyright'>Copyright 2024 | Ulinkit , All Right Reserved.</h2>
+        <h2 className='heading  footer-services copyright'>Copyright 2024 | Vipin Kumar , All Right Reserved.</h2>
       </div>
     </div>
   )

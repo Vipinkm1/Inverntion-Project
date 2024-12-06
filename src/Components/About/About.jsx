@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Banner1 from '../../assets/aboutus/about-banner.jpg'
-import AboutImage from  '../../assets/13017.jpg'
+import AboutImage from '../../assets/13017.jpg'
 import { ImCheckboxChecked } from 'react-icons/im'
 import { GrDocumentPerformance } from "react-icons/gr";
 import { TbMoodCrazyHappy } from "react-icons/tb";
@@ -13,9 +13,8 @@ const About = () => {
     const [count2, setCount2] = useState(0)
     const [count3, setCount3] = useState(0)
     const [count4, setCount4] = useState(0)
-
     const services = [
-        { id: 1, Img: Digi, title: 'Web Development',  name: 'Saitan Kumar' },
+        { id: 1, Img: Digi, title: 'Web Development', name: 'Saitan Kumar' },
         { id: 2, Img: Digi, title: 'Software Development', name: 'Boot Kumar ' },
         { id: 3, Img: Digi, title: 'Digital Marketing', name: 'Rakshsh Kumar' },
         { id: 4, Img: Digi, title: 'Costom Website', name: 'Bootni Kumar' },
@@ -29,7 +28,7 @@ const About = () => {
                 }
                 return prev + 1;
             })
-     }, 54);
+        }, 54);
         const projectInterval2 = setInterval(() => {
             setCount2(prev => {
                 if (prev >= 56) {
@@ -63,7 +62,7 @@ const About = () => {
             clearInterval(projectInterval2);
             clearInterval(projectInterval3);
             clearInterval(projectInterval4);
-        } 
+        }
     })
     return (
         <div className='about-container'>
@@ -72,7 +71,7 @@ const About = () => {
             </div>
             <div className='about-page topex'>
                 <div className='about-section'>
-                    <img src={AboutImage} className='about-image'/>
+                    <img src={AboutImage} className='about-image' />
                     <div className='some-about-content'>
                         <h1 className='color font hero-font'>About Invention <span className='span'>IT Solution</span></h1>
                         <p className=' quote-1 font '>An invention service provider website is a platform designed to assist inventors in developing, protecting, and commercializing their ideas. These websites often offer a variety of services to help inventors bring their concepts to life and navigate the process of patenting, prototyping, and marketing. Below is an outline of what such a website might include:</p>
@@ -101,7 +100,7 @@ const About = () => {
                     <div className='project-completion-item'>
                         <div className='project-item-list'>
                             <GrDocumentPerformance className='icon-size' />
-                            <div className='project-content'> 
+                            <div className='project-content'>
                                 <h1 className='project-content'>{count1}+</h1>
                                 <p className=' topex project-content color-1'>Project Completion</p>
                             </div>
@@ -129,8 +128,8 @@ const About = () => {
                         </div>
                     </div>
                 </div>
-               <div className='grid-template-hel topex-2'>
-               {services.map((services) => (
+                <div className='grid-template-hel topex-2'>
+                    {services.map((services) => (
                         <div className='grid-border topex-2' data-aos='zoom-in' key={services.id}>
                             <div className='img-aspect'>
                                 <img className='services-img-add' src={services.Img} />
@@ -141,7 +140,7 @@ const About = () => {
                             </div>
                         </div>
                     ))}
-               </div>
+                </div>
             </div>
         </div>
     )

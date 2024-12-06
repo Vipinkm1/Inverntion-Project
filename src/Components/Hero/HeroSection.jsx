@@ -10,7 +10,6 @@ import { motion } from 'framer-motion'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-
 const HeroSection = () => {
     useEffect(() => {
         AOS.init({
@@ -19,7 +18,6 @@ const HeroSection = () => {
             easing: 'ease-in-out',
         })
     }, [])
-    
     const [progressFilled, setProgressFilled] = useState([])
     const services = [
         { id: 1, Img: Digi, title: 'Web Development', description: 'The best web developers dont just build websites.' },
@@ -40,7 +38,7 @@ const HeroSection = () => {
         autoplay: true,
         autoplaySpeed: 2000,
         arrows: false,
-    } 
+    }
 
     const progresRefs = useRef([])
     useEffect(() => {
@@ -49,19 +47,19 @@ const HeroSection = () => {
             rootMargin: '0px',
             threshold: 0.1
         }
-        
-        const observer  = new IntersectionObserver((entries) => {
-          entries.forEach((entry) => {
-            const index = progresRefs.current.indexOf(entry.target);
-            if(entry.isIntersecting && index !== -1){
-                setProgressFilled(prev => {
-                    const newState = [...prev];
-                    newState[index] = true;
-                    return newState;
-                })
-                observer.unobserve(entry.target)
-            }
-          })
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                const index = progresRefs.current.indexOf(entry.target);
+                if (entry.isIntersecting && index !== -1) {
+                    setProgressFilled(prev => {
+                        const newState = [...prev];
+                        newState[index] = true;
+                        return newState;
+                    })
+                    observer.unobserve(entry.target)
+                }
+            })
         }, options)
 
         const currentRefs = progresRefs.current;
@@ -70,13 +68,13 @@ const HeroSection = () => {
                 observer.observe(ref)
             }
         })
-          return () => {
+        return () => {
             currentRefs.forEach(ref => {
-                if(ref){
+                if (ref) {
                     observer.unobserve(ref)
                 }
             })
-          }
+        }
     }, [])
     return (
         <div className='page'>
@@ -152,56 +150,56 @@ const HeroSection = () => {
                 <div className='it-services '>
                     <div className='experience-field' >
                         <p>Web Development</p>
-                        <div className='progress-bar' ref = {el => progresRefs.current[0] = el}>
-                            <div className='fill-border topex' style={{width: progresRefs.current? '25%' : '0%'}} ></div>
-                            <p>25%</p>
+                        <div className='progress-bar' ref={el => progresRefs.current[0] = el}>
+                            <div className='fill-border topex' style={{ width: progresRefs.current ? '25%' : '0%' }} ></div>
+                            <p className='para-1'>25%</p>
                         </div>
                         <p className='topex'>E-Commerce Excutive</p>
                         <div className='progress-bar'>
-                            <div className='fill-border topex'  style= {{width: progresRefs.current? '75%' : '0%'}}></div>
-                            <p>75%</p>
+                            <div className='fill-border topex' style={{ width: progresRefs.current ? '75%' : '0%' }}></div>
+                            <p className='para-1' >75%</p>
                         </div>
                         <p className='topex'>Software Development</p>
                         <div className='progress-bar'>
-                            <div className='fill-border topex' style={{ width: progresRefs.current? '100%': '0%' }}></div>
-                            <p>100%</p>
+                            <div className='fill-border topex' style={{ width: progresRefs.current ? '100%' : '0%' }}></div>
+                            <p className='para-1'>100%</p>
                         </div>
                         <p className='topex'>Digital Marketing</p>
                         <div className='progress-bar'>
-                            <div className='fill-border topex' style={{ width: progresRefs.current? '65%': '0%' }}></div>
-                            <p>65%</p>
+                            <div className='fill-border topex' style={{ width: progresRefs.current ? '65%' : '0%' }}></div>
+                            <p className='para-1'>65%</p>
                         </div>
                         <p className='topex'>Search Engine Marketing</p>
                         <div className='progress-bar'>
-                            <div className='fill-border topex' style={{ width: progresRefs.current? '40%': '0%' }}></div>                         
-                            <p>40%</p>
+                            <div className='fill-border topex' style={{ width: progresRefs.current ? '40%' : '0%' }}></div>
+                            <p className='para-1'>40%</p>
                         </div>
                     </div>
                     <div className='experience-field'>
                         <p>CMS Tool</p>
                         <div className='progress-bar'>
-                            <div className='fill-border topex' style={{ width: progresRefs.current? '20%': '0%' }}></div>
-                            <p>20%</p>
+                            <div className='fill-border topex' style={{ width: progresRefs.current ? '20%' : '0%' }}></div>
+                            <p className='para-1'>20%</p>
                         </div>
                         <p className='topex'>Costom Design</p>
                         <div className='progress-bar'>
-                            <div className='fill-border topex' style={{ width: progresRefs.current? '65%' : '0%' }}></div>
-                            <p>65%</p>
+                            <div className='fill-border topex' style={{ width: progresRefs.current ? '65%' : '0%' }}></div>
+                            <p className='para-1'>65%</p>
                         </div>
                         <p className='topex'>Web design</p>
                         <div className='progress-bar'>
-                            <div className='fill-border topex' style={{ width: progresRefs.current? '70%' : '0%' }}></div>
-                            <p>70%</p>
+                            <div className='fill-border topex' style={{ width: progresRefs.current ? '70%' : '0%' }}></div>
+                            <p className='para-1'>70%</p>
                         </div>
                         <p className='topex'>Magneto Website</p>
                         <div className='progress-bar'>
-                            <div className='fill-border topex' style={{ width: progresRefs.current? '95%' : '0%' }}></div>
-                            <p>95%</p>
+                            <div className='fill-border topex' style={{ width: progresRefs.current ? '95%' : '0%' }}></div>
+                            <p className='para-1'>95%</p>
                         </div>
                         <p className='topex'>Costom Website</p>
                         <div className='progress-bar'>
-                            <div className='fill-border topex' style={{ width: progresRefs.current? '100%' : '0%' }}></div>
-                            <p>100%</p>
+                            <div className='fill-border topex' style={{ width: progresRefs.current ? '100%' : '0%' }}></div>
+                            <p className='para-1'>100%</p>
                         </div>
                     </div>
                 </div>
@@ -224,13 +222,11 @@ const HeroSection = () => {
                             <div className='img-aspect-1'>
                                 <h3 className='copyright p-bg'>{services.title}</h3>
                                 <p className='font   p-bg'>{services.description}</p>
-                                <p className='copyright secure-it font p-bg'>Read More</p>
                             </div>
                         </div>
                     ))}
                 </Slider>
             </div>
-
         </div>
     )
 }

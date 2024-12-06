@@ -1,4 +1,9 @@
 import React, { useState } from 'react'
+import FacebookIcon from '@mui/icons-material/Facebook';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import XIcon from '@mui/icons-material/X';
+import YouTubeIcon from '@mui/icons-material/YouTube';
+
 
 const Contact = () => {
     const [contactUs, setContactUs] = useState({
@@ -6,6 +11,7 @@ const Contact = () => {
         email: '',
         message: ''
     })
+
     const handleContactChange = (e) => {
         const { name, value } = e.target;
         setContactUs((prevState) => ({
@@ -13,7 +19,6 @@ const Contact = () => {
             [name]: value
         }))
     }
-
     const handleContact = (e) => {
         e.preventDefault()
         setContactUs(contactUs)
@@ -56,12 +61,12 @@ const Contact = () => {
                     </div>
                     <div className='mt'>
                         <p className='para3'>Follow on Social Media:</p>
-                        {/* <div className='footer-flex-3 mt'>
+                        <div className='footer-flex-3 mt'>
                             <FacebookIcon className='add-icon' />
                             <InstagramIcon className='add-icon' />
-                            <XIcon className='add-icon'/>
-                            <YouTubeIcon   className='add-icon' />
-                        </div> */}
+                            <XIcon className='add-icon' />
+                            <YouTubeIcon className='add-icon' />
+                        </div>
                     </div>
                     <div className='mt'>
                         <p className='para3'>Call or Email Us</p>
@@ -72,5 +77,4 @@ const Contact = () => {
         </div>
     )
 }
-
 export default Contact

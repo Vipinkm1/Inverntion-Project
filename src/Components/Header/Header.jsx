@@ -1,11 +1,9 @@
 import React from 'react'
 import navlogo from '../../assets/invention-logo.png'
 import { Link, useNavigate } from 'react-router-dom'
-
-
 const Header = () => {
   const navigate = useNavigate()
-
+  
   const handleSignup = () => {
     navigate('/signup')
   }
