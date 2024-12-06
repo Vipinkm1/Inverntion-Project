@@ -12,7 +12,7 @@ const Header = () => {
     <div className='header '>
       <div className='navbar'>
         <div className='nav-logo'>
-          <img src={navlogo} alt='nav-logo' className='logo-name' />
+          <img onClick={()=> navigate('/')} src={navlogo} alt='nav-logo' className='logo-name' />
         </div>
         <div className='nav-item'>
           <ul className='nav-links'>

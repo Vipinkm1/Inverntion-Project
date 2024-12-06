@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import navlogo from '../../assets/invention-logo.png'
 import Facebook from '../../assets/social/communication.png'
 import Instagram from '../../assets/social/instagram.png'
@@ -10,13 +10,14 @@ import { GrLocation } from "react-icons/gr";
 import { MdEmail } from "react-icons/md";
 
 const Footer = () => {
+  const navigate = useNavigate()
   return (
     <div className=' page topex-2'>
       <div className='footer-flex '>
         <div className='footer-container-1'>
           <h2 className='heading  footer-heading'>Why Us</h2>
           <div className='some-content'>
-            <img src={navlogo} alt='nav-logo' className='logo-name footer-logo' />
+            <img onClick={() => navigate('/')} src={navlogo} alt='nav-logo' className='logo-name footer-logo' />
             <p className=' para1'>At Invention, creativity isn’t just a part of our process; it’s at the core of who we are. We are a creative agency where imagination meets innovation. If you can think it, we can make it happen.</p>
           </div>
         </div>

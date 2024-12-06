@@ -31,6 +31,7 @@
 }
 .logo-name {
 width: 150px;
+cursor: pointer;
 }
 .hamburger{
   font-size: 30px;
