@@ -253,6 +253,27 @@ li a:hover {
 .img-width-size{
  width: 50%;
 }
+.skillName{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.skillName-2{
+  border: 1px solid black;
+  text-align: center;
+  padding: 20px;
+  border-radius: 50px;
+  background-color: rgb(16, 24, 49);
+  color: #fff;
+
+  font-weight: 600;
+  font-family: 'Oswald', sans-serif;
+  cursor: pointer;
+}
+.skillName-2:hover{
+  background-color: rgb(39, 56, 106);
+  transition: 0.6s ease-in-out;
+}
 /* It experience section */
 .topex-2{
   margin-top: 70px;
@@ -510,6 +531,7 @@ border-top:  1px solid  #ee6464;
   display: flex;
   justify-content: start;
   gap: 150px;
+
 }
 .support-icon{
   font-size: 150px;
@@ -568,6 +590,10 @@ border-top:  1px solid  #ee6464;
   line-height: 1.5rem;
   word-spacing: 0.2rem;
   text-align: justify;
+
+}
+.font-size-2{
+  text-align: center;
 }
 .border-6{
   border: 1px solid black;
@@ -653,6 +679,13 @@ border-top:  1px solid  #ee6464;
     outline: none;
     border-radius: 5px;
   }
+  .input-width-2{
+    border: 1px solid black;
+    padding: 10px;
+    width: 100%;
+    border-radius: 2px;
+  }
+
   .input-width::placeholder{
     color:  rgb(224, 179, 179);
   }

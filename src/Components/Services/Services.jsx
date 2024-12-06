@@ -1,15 +1,26 @@
 import React from 'react';
-import About from '../../assets/aboutus/about-banner.jpg';
+import Service from '../../assets/service/SERVICES.jpg'
 import { IoIosArrowRoundForward } from "react-icons/io";
-import { MdOutlineSupportAgent } from "react-icons/md";
 import Profile from '../../assets/service/33395.jpg';
 import { FcRating } from "react-icons/fc";
 
+
+
 const Services = () => {
+    const tools = [
+        {id: 1, skill: 'HTML'},
+        {id: 2, skill: 'CSS'},
+        {id: 3, skill: 'JAVASCRIPT'},
+        {id: 4, skill: 'REACT.JS'},
+        {id: 5, skill: 'NODE.JS'},
+        {id: 6, skill: 'MongoDB'},
+        {id: 7, skill: 'Express.Js'},
+        {id: 8, skill: 'MySQL'}
+    ]
     return (
         <div className='about-container '>
             <div className=''>
-                <img className='about-banner-img' src={About} />
+                <img className='about-banner-img' src={Service} />
             </div>
             <div className='page'>
                 <div className='service-container topex-2'>
@@ -56,23 +67,16 @@ const Services = () => {
                         </div>
                     </div>
                 </div>
-                <div className='support-item topex-2'>
-                    <div className='support-center'>
-                        <MdOutlineSupportAgent className='support-icon' />
-                        <p className='font-size-1'>Costomer Support</p>
-                    </div>
-                    <div className='support-center'>
-                        <MdOutlineSupportAgent className='support-icon' />
-                        <p className='font-size-1'>Costomer Support</p>
-                    </div>
-                    <div className='support-center'>
-                        <MdOutlineSupportAgent className='support-icon' />
-                        <p className='font-size-1'>Costomer Support</p>
-                    </div>
-                    <div className='support-center'>
-                        <MdOutlineSupportAgent className='support-icon' />
-                        <p className='font-size-1'>Costomer Support</p>
-                    </div>
+                {/* Tools & technolo */}
+                <div  className='tools topex-2'>
+                <h1 className='color font hero-font copyright  '>Which Technology <span className='span'>I Used?</span></h1>
+                <div className='skillName topex-2'>
+                    {tools.map((item)=> (
+                        <div className='skillName-2'>
+                            {item.skill}
+                        </div>
+                    ))}
+                </div>
                 </div>
                 {/*  testimonial */}
                 <div className='testimonial-1 topex-2'>
@@ -97,7 +101,7 @@ const Services = () => {
                                     <FcRating />
                                 </div>
                                 <p className='font-size-1 topex'>
-                                    Infetech is a professional IT Company that always creates quality software for clients. If you are looking for a team of talent developers to find out the best IT solutions, Infetech is a company that your team should consider.										</p>
+                                    Infetech is a professional IT Company that always creates quality software for clients. If you are looking for a team of talent developers to find out the best IT solutions, Infetech is a company that your team should consider.</p>
                             </div>
                         </div>
                         <div className=''>

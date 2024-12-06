@@ -20,28 +20,16 @@ const Footer = () => {
             <p className=' para1'>At Invention, creativity isn’t just a part of our process; it’s at the core of who we are. We are a creative agency where imagination meets innovation. If you can think it, we can make it happen.</p>
           </div>
         </div>
-        <div className='footer-container-2'>
-
-          <h2 className='heading   color font'>Our Services</h2>
-          <div className='some-content'>
-            <div className='footer-services textBig para1'>Web Developement</div>
-            <div className='footer-services textBig para1'>Desigining</div>
-            <div className='footer-services textBig para1'>Mobile Developement</div>
-            <div className='footer-services textBig para1'> SEO</div>
-            <div className='footer-services textBig para1'>Branding</div>
-            <div className='footer-services textBig para1'>Digital Marketing</div>
-            <div className='footer-services textBig para1'>AWS Services</div>
-          </div>
-        </div>
+        
         <div className='footer-container-2'>
           <h2 className='heading color font'>Our Menu</h2>
           <div className='some-content'>
-            <Link to='' className='footer-services textBig para1'>Home</Link>
-            <Link to='' className='footer-services textBig para1'>About</Link>
-            <Link to='' className='footer-services textBig para1'>Services</Link>
+            <Link to='/' className='footer-services textBig para1'>Home</Link>
+            <Link to='/about' className='footer-services textBig para1'>About</Link>
+            <Link to='/services' className='footer-services textBig para1'>Services</Link>
             <Link to='' className='footer-services textBig para1'>Portfolio</Link>
             <Link to='' className='footer-services textBig para1'>Blog</Link>
-            <Link to='' className='footer-services textBig para1'>Contact Us</Link>
+            <Link to='/contact' className='footer-services textBig para1'>Contact Us</Link>
           </div>
         </div>
         <div className='footer-container-2'>
@@ -72,6 +60,11 @@ const Footer = () => {
             <img className='footer-social-icon' src={Twitter} />
             <img className='footer-social-icon' src={Youtube} />
           </div>
+        </div>
+        <div className='footer-container-2'>
+        <h2 className='heading color font '>Suscribes</h2>
+        <input className='input-width-2 topex' type='text' placeholder='enter email'/>
+        <button className='button-1 topex'>Suscribe</button>
         </div>
       </div>
       {/*  another content */}

@@ -22,7 +22,7 @@ const Header = () => {
             <li className='lnk-size'><Link className='lnk-size-2' to='/contact' href='#contact'>Contact</Link></li>
             <li className='lnk-size'><a className='lnk-size-2' href='#blog'>Blog</a></li>
             <li className='btn-li lnk-size'><button onClick={handleSignup} className='btn-1'>SignUp</button></li>
-            <li className='btn-li lnk-size'><button  className='btn-1'>SignIn</button></li>
+            <li className='btn-li lnk-size'><button onClick={()=> navigate('/login')} className='btn-1'>SignIn</button></li>
           </ul>
         </div>
       </div>

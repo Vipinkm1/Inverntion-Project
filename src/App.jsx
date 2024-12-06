@@ -9,6 +9,7 @@ import Services from './Components/Services/Services'
 import Signup from './Components/Auth/Signup'
 import Login from './Components/Auth/Login'
 
+
 function App() {
   return (
     <>
@@ -21,6 +22,8 @@ function App() {
             <Route path='/services' element={<Services />} />
             <Route path='/signup' element={<Signup />} />
             <Route path='/login' element={<Login />} />
+            {/* pages */}
+         
           </Routes>
         </Layout>
       </BrowserRouter>

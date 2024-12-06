@@ -9,7 +9,6 @@ const Signup = () => {
         confirmpassword: '',
         gender: ''
     })
-
     const handleChange = (e) => {
         const { name, value } = e.target;
         setSignUp((prevState) => ({
@@ -26,7 +25,6 @@ const Signup = () => {
         navigate('/login')
         console.log('Login sucessfully')
     }
-
     return (
         <div className='popup'>
             <div className='border-1'>
