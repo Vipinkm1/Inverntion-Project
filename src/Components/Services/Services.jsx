@@ -4,18 +4,16 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 import Profile from '../../assets/service/33395.jpg';
 import { FcRating } from "react-icons/fc";
 
-
-
 const Services = () => {
     const tools = [
-        {id: 1, skill: 'HTML'},
-        {id: 2, skill: 'CSS'},
-        {id: 3, skill: 'JAVASCRIPT'},
-        {id: 4, skill: 'REACT.JS'},
-        {id: 5, skill: 'NODE.JS'},
-        {id: 6, skill: 'MongoDB'},
-        {id: 7, skill: 'Express.Js'},
-        {id: 8, skill: 'MySQL'}
+        { id: 1, skill: 'HTML' },
+        { id: 2, skill: 'CSS' },
+        { id: 3, skill: 'JAVASCRIPT' },
+        { id: 4, skill: 'REACT.JS' },
+        { id: 5, skill: 'NODE.JS' },
+        { id: 6, skill: 'MongoDB' },
+        { id: 7, skill: 'Express.Js' },
+        { id: 8, skill: 'MySQL' }
     ]
     return (
         <div className='about-container '>
@@ -68,15 +66,15 @@ const Services = () => {
                     </div>
                 </div>
                 {/* Tools & technolo */}
-                <div  className='tools topex-2'>
-                <h1 className='color font hero-font copyright  '>Which Technology <span className='span'>I Used?</span></h1>
-                <div className='skillName topex-2'>
-                    {tools.map((item)=> (
-                        <div className='skillName-2'>
-                            {item.skill}
-                        </div>
-                    ))}
-                </div>
+                <div className='tools topex-2'>
+                    <h1 className='color font hero-font copyright  '>Which Technology <span className='span'>I Used?</span></h1>
+                    <div className='skillName topex-2'>
+                        {tools.map((item) => (
+                            <div className='skillName-2'>
+                                {item.skill}
+                            </div>
+                        ))}
+                    </div>
                 </div>
                 {/*  testimonial */}
                 <div className='testimonial-1 topex-2'>
