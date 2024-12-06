@@ -18,7 +18,7 @@ const Header = () => {
           <ul className='nav-links'>
             <li className='lnk-size'><Link className='lnk-size-2' to='/' href='#home'>Home</Link></li>
             <li className='lnk-size'><Link className='lnk-size-2' to='/about'>About</Link></li>
-            <li className='lnk-size'><a className='lnk-size-2' href='/services'>Services</a></li>
+            <li className='lnk-size'><Link className='lnk-size-2' to='/services'>Services</Link></li>
             <li className='lnk-size'><Link className='lnk-size-2' to='/contact' href='#contact'>Contact</Link></li>
             <li className='lnk-size'><a className='lnk-size-2' href='#blog'>Blog</a></li>
             <li className='btn-li lnk-size'><button onClick={handleSignup} className='btn-1'>SignUp</button></li>
