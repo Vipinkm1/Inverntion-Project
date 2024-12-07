@@ -514,7 +514,7 @@ border-top:  1px solid  #ee6464;
 .project-item-list{
   display: flex;
   gap: 30px;
-  justify-content: space-between;
+  justify-content: start;
   border: 1px solid #b3b1b1;
   padding: 20px 10px;
   border-radius: 2px;
@@ -727,6 +727,7 @@ border-top:  1px solid  #ee6464;
   /* Hamburger menu */
   .hamburger {
     display: block;
+    font-size: 25px;
   }
   .page{
     padding: 10px;
@@ -767,8 +768,7 @@ border-top:  1px solid  #ee6464;
     text-align: justify;
   }
   .hero-image{
-    margin-top: 20px;
-    text-align: center;
+    display: none;
  
   }
   .some-about-content{
@@ -855,7 +855,11 @@ border-top:  1px solid  #ee6464;
 .border-1{
   width: 100%;
 }
-
-
+ .project-completion{
+  padding: 20px;
+ }
+ .border-1{
+  margin-top: 60px;
+ }
 }
 
