@@ -11,7 +11,6 @@ const Contact = () => {
         email: '',
         message: ''
     })
-
     const handleContactChange = (e) => {
         const { name, value } = e.target;
         setContactUs((prevState) => ({

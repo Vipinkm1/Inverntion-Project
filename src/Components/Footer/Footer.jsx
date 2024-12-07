@@ -21,7 +21,7 @@ const Footer = () => {
             <p className=' para1'>At Invention, creativity isn’t just a part of our process; it’s at the core of who we are. We are a creative agency where imagination meets innovation. If you can think it, we can make it happen.</p>
           </div>
         </div>
-        
+
         <div className='footer-container-2'>
           <h2 className='heading color font'>Our Menu</h2>
           <div className='some-content'>
@@ -63,9 +63,9 @@ const Footer = () => {
           </div>
         </div>
         <div className='footer-container-2'>
-        <h2 className='heading color font '>Suscribes</h2>
-        <input className='input-width-2 topex' type='text' placeholder='enter email'/>
-        <button className='button-1 topex'>Suscribe</button>
+          <h2 className='heading color font '>Suscribes</h2>
+          <input className='input-width-2 topex' type='text' placeholder='enter email' />
+          <button className='button-1 topex'>Suscribe</button>
         </div>
       </div>
       {/*  another content */}

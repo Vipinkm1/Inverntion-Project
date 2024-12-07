@@ -11,8 +11,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useNavigate } from 'react-router-dom';
 
-const HeroSection = () => {
 
+
+const HeroSection = () => {
     const navigate = useNavigate()
     useEffect(() => {
         AOS.init({
@@ -30,8 +31,6 @@ const HeroSection = () => {
         { id: 1, Img: Digi, title: 'E-Commerce Executive', description: 'The best web developers dont just build websites' },
         { id: 1, Img: Digi, title: 'Seo', description: 'The best web developers dont just build websites' },
     ]
-
-
     const sliderSettings = {
         dots: false,
         infinite: true,
@@ -41,6 +40,14 @@ const HeroSection = () => {
         autoplay: true,
         autoplaySpeed: 2000,
         arrows: false,
+        responsive: [
+            {
+                breakpoint: 550,
+                settings: {
+                    slidesToShow: 2,
+                },
+            },
+        ]
     }
 
     const progresRefs = useRef([])
@@ -108,7 +115,7 @@ const HeroSection = () => {
                 </div>
             </div>
             <div className='hero-flex topex-2' data-aos='fade-up'>
-                <img src={Hero} />
+                <img className='img-width' src={Hero} />
                 <div className='some-about-content'>
                     <p className='secure-it font'>About Invention It Solution</p>
                     <h1 className='color font hero-font'>Preparing For Your Business Provide Best <span className='span'>IT Solution</span> </h1>
@@ -178,7 +185,7 @@ const HeroSection = () => {
                             <p className='para-1'>40%</p>
                         </div>
                     </div>
-                    <div className='experience-field'>
+                    <div className='experience-field topex'>
                         <p>CMS Tool</p>
                         <div className='progress-bar'>
                             <div className='fill-border topex' style={{ width: progresRefs.current ? '20%' : '0%' }}></div>
@@ -212,7 +219,7 @@ const HeroSection = () => {
                 <div className='it-services-flex'>
                     <h1 className='color font hero-font'>We Provide Exclusive Service <br />For
                         <span className='span'>  Your Business</span></h1>
-                    <button className='button-1' onClick={() => navigate('/services')}>View All Services</button>
+                    <button className='button-1 topex' onClick={() => navigate('/services')}>View All Services</button>
                 </div>
             </div>
             <div className='grid-template'>

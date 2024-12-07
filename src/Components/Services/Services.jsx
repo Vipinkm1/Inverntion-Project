@@ -30,7 +30,7 @@ const Services = () => {
                         <p className='font-size-1 topex'>Designing intuitive user experiences with clean, modern interfaces for web and mobile platforms.</p>
                         <p className='font-size-1 topex'>Providing ongoing maintenance, updates, and technical support to keep websites running smoothly.</p>
                     </div>
-                    <div className='services-container-1'>
+                    <div className='services-container-1 '>
                         <h1 className='color font hero-font background-Remover'>All Services</h1>
                         <div className='border-6 topex'></div>
                         <div className='flex-row-col topex'>
