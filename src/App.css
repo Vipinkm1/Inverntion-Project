@@ -849,6 +849,13 @@ border-top:  1px solid  #ee6464;
 .skillName{
   grid-template-columns: repeat(2, 1fr);
 }
+.popup{
+  padding: 10px;
+}
+.border-1{
+  width: 100%;
+}
+
 
 }
 
