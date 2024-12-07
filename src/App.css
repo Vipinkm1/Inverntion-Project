@@ -371,7 +371,6 @@ li a:hover {
 }
 .some-content {
   padding-top: 20px;
-  cursor: pointer;
   display: flex;
   flex-direction: column;
 }
@@ -388,6 +387,9 @@ border-top:  1px solid  #ee6464;
 } 
 .some-content {
   padding-top: 20px;
+  cursor: pointer;
+}
+.textBig{
   cursor: pointer;
 }
 .footer-services {
@@ -843,6 +845,9 @@ border-top:  1px solid  #ee6464;
 }
 .header{
   padding: 0;
+}
+.skillName{
+  grid-template-columns: repeat(2, 1fr);
 }
 
 }
