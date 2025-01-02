@@ -17,7 +17,7 @@ const Footer = () => {
         <div className='footer-container-1'>
           <h2 className='heading  footer-heading'>Why Us</h2>
           <div className='some-content'>
-            <img onClick={() => navigate('/')} src={navlogo} alt='nav-logo' className='logo-name footer-logo' />
+            <img onClick={() => {window.scrollTo({top: 0, behavior:'smooth'}); navigate('/')}} src={navlogo} alt='nav-logo' className='logo-name footer-logo' />
             <p className=' para1'>At Invention, creativity isn’t just a part of our process; it’s at the core of who we are. We are a creative agency where imagination meets innovation. If you can think it, we can make it happen.</p>
           </div>
         </div>
@@ -25,12 +25,12 @@ const Footer = () => {
         <div className='footer-container-2'>
           <h2 className='heading color font'>Our Menu</h2>
           <div className='some-content'>
-            <Link to='/' className='footer-services textBig para1'>Home</Link>
-            <Link to='/about' className='footer-services textBig para1'>About</Link>
-            <Link to='/services' className='footer-services textBig para1'>Services</Link>
+            <div onClick={()=> {window.scrollTo({top: 0, behavior: 'smooth'}); navigate('/')}} className='footer-services textBig para1'>Home</div>
+            <div onClick={()=> {window.scrollTo({top: 0, behavior: 'smooth'}); navigate('/about')}} className='footer-services textBig para1'>About</div>
+            <div onClick={()=> {window.scrollTo({top: 0, behavior: 'smooth'}); navigate('/services')}}  className='footer-services textBig para1'>Services</div>
             <Link to='' className='footer-services textBig para1'>Portfolio</Link>
             <Link to='' className='footer-services textBig para1'>Blog</Link>
-            <Link to='/contact' className='footer-services textBig para1'>Contact Us</Link>
+            <div  onClick={()=> {window.scrollTo({top: 0, behavior: 'smooth'}); navigate('/contact')}} className='footer-services textBig para1'>Contact Us</div>
           </div>
         </div>
         <div className='footer-container-2'>
