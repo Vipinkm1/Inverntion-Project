@@ -8,6 +8,8 @@ import Layout from './Components/Layout/Layout'
 import Services from './Components/Services/Services'
 import Signup from './Components/Auth/Signup'
 import Login from './Components/Auth/Login'
+import Blog from './Components/Blog/Blog'
+import BlogDetail from './Components/BlogDetail/BlogDetail'
 
 
 function App() {
@@ -22,6 +24,8 @@ function App() {
             <Route path='/services' element={<Services />} />
             <Route path='/signup' element={<Signup />} />
             <Route path='/login' element={<Login />} />
+            <Route path='/blog' element={<Blog/>} />
+            <Route path='/blog-detail' element={<BlogDetail/>}/>
             {/* pages */}
          
           </Routes>

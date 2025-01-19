@@ -439,6 +439,69 @@ border-top:  1px solid  #ee6464;
 .copyright {
   text-align: center;
 }
+/* our blog */
+.slider-container{
+  width: 100%;
+  overflow: hidden;
+
+  padding: 20px 0px;
+  border-radius: 2px;
+
+}
+.blog-sliding-container{
+  display: flex;
+  width: 100%;
+  animation: slide 15s linear infinite;
+}
+.border-item{
+  flex: 0 ,0, auto;
+  margin: 0 20px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  white-space: nowrap;
+}
+.img-width-4{
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+ }
+ .createddate{
+  color: #b0acac;
+  font-size: 12px;
+  font-family: 'oswald', 'Times New Roman', Times, serif;
+ }
+ .para5{
+  font-size: 20px;
+  font-family: 'oswald', 'Times New Roman', Times, serif;
+  font-weight: 600;
+}
+.para4{
+  font-family: 'oswald', 'Times New Roman', Times, serif;
+  font-size: 16px;
+  text-align: justify;
+  line-height: 1.5rem;
+}
+
+@keyframes slide{
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(-100%);
+  }
+}
+.blogs-container{
+  border-radius: 2px;
+  padding: 10px;
+  cursor: pointer;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+ }
+ .blog-grid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+ }
 /* pages css */
 /* Contact page css */
 .contact-us-title{
@@ -733,6 +796,11 @@ border-top:  1px solid  #ee6464;
   .page{
     padding: 10px;
   }
+  .blog-grid{
+
+    grid-template-columns: repeat(1, 1fr);
+ 
+   }
 
  
   
