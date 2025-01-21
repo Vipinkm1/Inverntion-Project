@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
 const Login = () => {
-
     const [login, setLogin] = useState({
         username: '',
         password: ''
@@ -12,19 +11,17 @@ const Login = () => {
         navigate('/signup')
     }
     const handleChange = () => {
-        const {name, value} = e.target;
-         setLogin((prevState => ({
+        const { name, value } = e.target;
+        setLogin((prevState => ({
             ...prevState,
             [name]: value
-         })))
+        })))
     }
-
-    const handleSignUpSubmit =(e)=> {
-      e.preventDefault()
-      setLogin(login)
-      console.log('login successfully')
+    const handleSignUpSubmit = (e) => {
+        e.preventDefault()
+        setLogin(login)
+        console.log('login successfully')
     }
-    
     return (
         <div className='popup'>
             <div className='border-1'>

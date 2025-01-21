@@ -7,12 +7,9 @@ import { TbMoodCrazyHappy } from "react-icons/tb";
 import { GrUserExpert } from "react-icons/gr";
 import { LiaAwardSolid } from "react-icons/lia";
 import Digi from '../../assets/service/digital-marketing-services.jpeg'
-
 import { useNavigate } from 'react-router-dom';
 
-
 const About = () => {
-
     const navigate = useNavigate()
     const [count1, setCount1] = useState(0)
     const [count2, setCount2] = useState(0)
@@ -52,7 +49,6 @@ const About = () => {
                 return prev + 1;
             })
         }, 30)
-
         const projectInterval4 = setInterval(() => {
             setCount4(prev => {
                 if (prev > 130) {
@@ -97,7 +93,7 @@ const About = () => {
                             <p className='quote-2 font'>Dramatically re-engineer value added IT systems via mission</p>
                         </div>
                         <div className='btns'>
-                            <button className='button-1 font' onClick={()=> {window.scrollTo({top: 0, behavior: 'smooth'}); navigate('/about')}}>Discover More</button>
+                            <button className='button-1 font' onClick={() => { window.scrollTo({ top: 0, behavior: 'smooth' }); navigate('/about') }}>Discover More</button>
                         </div>
                     </div>
                 </div>

@@ -1,23 +1,16 @@
 import { createContext, useContext, useState } from "react";
-
-
-const createContext = createContext()
-
+const Context = createContext()
 export const useCart = () => {
- return useContext(createContext)
+  return useContext(Context)
 }
-
-export  const  CartProvider = ((children)=> {
-  const [blogDetail, setBlogDetail]= useState(null)
-
-
+export const CartProvider = ({ children }) => {
+  const [blogDetail, setBlogDetail] = useState(null)
   const BlogData = (item) => {
     setBlogDetail(item)
   }
-
   return (
-    <Context.Provider value = {{blogDetail, BlogData}}>
-        {children}
+    <Context.Provider value={{ blogDetail, BlogData }}>
+      {children}
     </Context.Provider>
   )
-})
+}

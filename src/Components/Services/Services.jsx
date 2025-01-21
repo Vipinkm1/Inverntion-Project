@@ -3,7 +3,6 @@ import Service from '../../assets/service/SERVICES.jpg'
 import { IoIosArrowRoundForward } from "react-icons/io";
 import Profile from '../../assets/service/33395.jpg';
 import { FcRating } from "react-icons/fc";
-
 const Services = () => {
     const tools = [
         { id: 1, skill: 'HTML' },

@@ -10,9 +10,6 @@ import { motion } from 'framer-motion'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useNavigate } from 'react-router-dom';
-
-
-
 const HeroSection = () => {
     const navigate = useNavigate()
     useEffect(() => {
@@ -49,7 +46,6 @@ const HeroSection = () => {
             },
         ]
     }
-
     const progresRefs = useRef([])
     useEffect(() => {
         const options = {
@@ -57,7 +53,6 @@ const HeroSection = () => {
             rootMargin: '0px',
             threshold: 0.1
         }
-
         const observer = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {
                 const index = progresRefs.current.indexOf(entry.target);
@@ -71,7 +66,6 @@ const HeroSection = () => {
                 }
             })
         }, options)
-
         const currentRefs = progresRefs.current;
         currentRefs.forEach((ref) => {
             if (ref) {
@@ -106,8 +100,8 @@ const HeroSection = () => {
                     </motion.div>
                     <div className='quote '><p>“A designer knows he has achieved perfection not when there is nothing left to add, but when there is nothing left to take away.”</p></div>
                     <div className='btns'>
-                        <button className='button-1 font' onClick={() => {window.scrollTo({top: 0, behavior: 'smooth'}); navigate('/about')}}>About Us</button>
-                        <button className='button-1 font' onClick={()=> {window.scrollTo({top: 0, behavior: 'smooth'}); navigate('/contact')}} >Contact Us</button>
+                        <button className='button-1 font' onClick={() => { window.scrollTo({ top: 0, behavior: 'smooth' }); navigate('/about') }}>About Us</button>
+                        <button className='button-1 font' onClick={() => { window.scrollTo({ top: 0, behavior: 'smooth' }); navigate('/contact') }} >Contact Us</button>
                     </div>
                 </div>
                 <div className='hero-image'>
@@ -137,7 +131,7 @@ const HeroSection = () => {
                         <p className='quote-2 font'>Dramatically re-engineer value added IT systems via mission</p>
                     </div>
                     <div className='btns'>
-                        <button className='button-1 font ' onClick={()=> {window.scrollTo({top: 0, behavior: 'smooth'}); navigate('/about')}}>Discover More</button>
+                        <button className='button-1 font ' onClick={() => { window.scrollTo({ top: 0, behavior: 'smooth' }); navigate('/about') }}>Discover More</button>
                     </div>
                 </div>
             </div>
@@ -150,7 +144,7 @@ const HeroSection = () => {
                         <h1 className='container-a font' >Let our incredible team assist you with Website Development</h1>
                     </div>
                     <div className='contact-us'>
-                        <button className='button-1' onClick={() => {window.scrollTo({top: 0, behavior: 'smooth'}); navigate('/contact')}}>Contact Us</button>
+                        <button className='button-1' onClick={() => { window.scrollTo({ top: 0, behavior: 'smooth' }); navigate('/contact') }}>Contact Us</button>
                     </div>
                 </div>
             </div>
@@ -219,7 +213,7 @@ const HeroSection = () => {
                 <div className='it-services-flex'>
                     <h1 className='color font hero-font'>We Provide Exclusive Service <br />For
                         <span className='span'>  Your Business</span></h1>
-                    <button className='button-1 topex' onClick={() => {window.scrollTo({top: 0, behavior: 'smooth'}); navigate('/services')}}>View All Services</button>
+                    <button className='button-1 topex' onClick={() => { window.scrollTo({ top: 0, behavior: 'smooth' }); navigate('/services') }}>View All Services</button>
                 </div>
             </div>
             <div className='grid-template'>

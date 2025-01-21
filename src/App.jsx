@@ -10,27 +10,26 @@ import Signup from './Components/Auth/Signup'
 import Login from './Components/Auth/Login'
 import Blog from './Components/Blog/Blog'
 import BlogDetail from './Components/BlogDetail/BlogDetail'
-
-
+import { CartProvider } from './Components/Context/CreateContext'
 function App() {
   return (
     <>
-      <BrowserRouter>
-        <Layout>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path='/contact' element={<Contact />} />
-            <Route path='/about' element={<About />} />
-            <Route path='/services' element={<Services />} />
-            <Route path='/signup' element={<Signup />} />
-            <Route path='/login' element={<Login />} />
-            <Route path='/blog' element={<Blog/>} />
-            <Route path='/blog-detail' element={<BlogDetail/>}/>
-            {/* pages */}
-         
-          </Routes>
-        </Layout>
-      </BrowserRouter>
+      <CartProvider>
+        <BrowserRouter>
+          <Layout>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path='/contact' element={<Contact />} />
+              <Route path='/about' element={<About />} />
+              <Route path='/services' element={<Services />} />
+              <Route path='/signup' element={<Signup />} />
+              <Route path='/login' element={<Login />} />
+              <Route path='/blog' element={<Blog />} />
+              <Route path='/blog-detail' element={<BlogDetail />} />
+            </Routes>
+          </Layout>
+        </BrowserRouter>
+      </CartProvider>
     </>
   )
 }
