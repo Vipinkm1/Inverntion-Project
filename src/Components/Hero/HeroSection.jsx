@@ -6,7 +6,7 @@ import Frontend from '../../assets/frontend-dev.json'
 import Hero from '../../assets/hero-image-d.png'
 import { ImCheckboxChecked } from "react-icons/im";
 import Digi from '../../assets/service/digital-marketing-services.jpeg'
-import { motion } from 'framer-motion'
+import { color, motion } from 'framer-motion'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useNavigate } from 'react-router-dom';
@@ -141,7 +141,7 @@ const HeroSection = () => {
                         <h1 className='container-p font'>Let our incredible team assist you with Website Development</h1>
                     </div>
                     <div className='container-2'>
-                        <h1 className='container-a font' >Let our incredible team assist you with Website Development</h1>
+                        <h1 className='container-a font' style={{color: ' rgb(6, 6, 63)'}}>Let our incredible team assist you with Website Development</h1>
                     </div>
                     <div className='contact-us'>
                         <button className='button-1' onClick={() => { window.scrollTo({ top: 0, behavior: 'smooth' }); navigate('/contact') }}>Contact Us</button>

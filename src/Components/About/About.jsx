@@ -6,8 +6,14 @@ import { GrDocumentPerformance } from "react-icons/gr";
 import { TbMoodCrazyHappy } from "react-icons/tb";
 import { GrUserExpert } from "react-icons/gr";
 import { LiaAwardSolid } from "react-icons/lia";
-import Digi from '../../assets/service/digital-marketing-services.jpeg'
+import Digi from '../../assets/service/digital-marketing-services.jpeg';
+import WebDv from '../../assets/aboutus/web-developer.jpg';
+import DigiMar from '../../assets/aboutus/digital-marketing.jpg'
 import { useNavigate } from 'react-router-dom';
+import CustomWeb from '../../assets/aboutus/custom-web.jpg'
+import SoftwareDev from '../../assets/aboutus/software-dev.jpg'
+
+
 
 const About = () => {
     const navigate = useNavigate()
@@ -16,10 +22,10 @@ const About = () => {
     const [count3, setCount3] = useState(0)
     const [count4, setCount4] = useState(0)
     const services = [
-        { id: 1, Img: Digi, title: 'Web Development', name: 'Saitan Kumar' },
-        { id: 2, Img: Digi, title: 'Software Development', name: 'Boot Kumar ' },
-        { id: 3, Img: Digi, title: 'Digital Marketing', name: 'Rakshsh Kumar' },
-        { id: 4, Img: Digi, title: 'Costom Website', name: 'Bootni Kumar' },
+        { id: 1, Img: WebDv, title: 'Web Development', name: 'Vipin Kumar' },
+        { id: 2, Img: CustomWeb, title: 'Software Development', name: 'Priyanshu Kumar ' },
+        { id: 3, Img: DigiMar, title: 'Digital Marketing', name: 'Krishna Pratap' },
+        { id: 4, Img: SoftwareDev, title: 'Costom Website', name: 'Akashay Kalvar' },
     ]
     useEffect(() => {
         const projectInterval = setInterval(() => {
@@ -30,7 +36,7 @@ const About = () => {
                 }
                 return prev + 1;
             })
-        }, 54);
+        }, 10);
         const projectInterval2 = setInterval(() => {
             setCount2(prev => {
                 if (prev >= 56) {
@@ -39,7 +45,7 @@ const About = () => {
                 }
                 return prev + 1;
             })
-        }, 56)
+        }, 10)
         const projectInterval3 = setInterval(() => {
             setCount3(prev => {
                 if (prev >= 30) {
@@ -48,16 +54,16 @@ const About = () => {
                 }
                 return prev + 1;
             })
-        }, 30)
+        }, 10)
         const projectInterval4 = setInterval(() => {
             setCount4(prev => {
-                if (prev > 130) {
+                if (prev > 30) {
                     clearInterval(projectInterval4);
                     return prev;
                 }
                 return prev + 1;
             })
-        }, 130)
+        }, 10)
         return () => {
             clearInterval(projectInterval);
             clearInterval(projectInterval2);
