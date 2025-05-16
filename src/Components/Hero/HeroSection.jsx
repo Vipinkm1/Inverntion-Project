@@ -10,6 +10,12 @@ import { color, motion } from 'framer-motion'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useNavigate } from 'react-router-dom';
+import WebDev from '../../assets/aboutus/web-developer.jpg'
+import DigiMar from '../../assets/aboutus/digital-marketing.jpg'
+import CustomWeb from '../../assets/aboutus/custom-web.jpg'
+import SoftDev from '../../assets/aboutus/software-dev.jpg'
+import Seo from '../../assets/search-engine-optimization.jpg'
+
 const HeroSection = () => {
     const navigate = useNavigate()
     useEffect(() => {
@@ -21,12 +27,12 @@ const HeroSection = () => {
     }, [])
     const [progressFilled, setProgressFilled] = useState([])
     const services = [
-        { id: 1, Img: Digi, title: 'Web Development', description: 'The best web developers dont just build websites.' },
-        { id: 1, Img: Digi, title: 'Software Development', description: 'The best web developers dont just build websites ' },
-        { id: 1, Img: Digi, title: 'Digital Marketing', description: 'The best web developers dont just build websites' },
-        { id: 1, Img: Digi, title: 'Costom Website', description: 'The best web developers dont just build websites' },
+        { id: 1, Img: WebDev, title: 'Web Development', description: 'The best web developers dont just build websites.' },
+        { id: 1, Img: SoftDev, title: 'Software Development', description: 'The best web developers dont just build websites ' },
+        { id: 1, Img: DigiMar, title: 'Digital Marketing', description: 'The best web developers dont just build websites' },
+        { id: 1, Img: CustomWeb, title: 'Costom Website', description: 'The best web developers dont just build websites' },
         { id: 1, Img: Digi, title: 'E-Commerce Executive', description: 'The best web developers dont just build websites' },
-        { id: 1, Img: Digi, title: 'Seo', description: 'The best web developers dont just build websites' },
+        { id: 1, Img: Seo, title: 'Seo', description: 'The best web developers dont just build websites' },
     ]
     const sliderSettings = {
         dots: false,
