@@ -22,8 +22,8 @@ const Header = () => {
               <li className='lnk-size'><div onClick={() => { window.scrollTo({ top: 0, behavior: 'smooth' }); navigate('/services') }} className='lnk-size-2'>Services</div></li>
               <li className='lnk-size'><div onClick={() => { window.scrollTo({ top: 0, behavior: 'smooth' }); navigate('/contact') }} className='lnk-size-2' >Contact</div></li>
               <li className='lnk-size'><div onClick={() => { window.scrollTo({ top: 0, behavior: 'smooth' }); navigate('/blog') }} className='lnk-size-2' >Blog</div></li>
-              <li className='btn-li lnk-size'><button onClick={() => { window.scrollTo({ top: 0, behavior: 'smooth' }); navigate('/signup') }} className='btn-1'>SignUp</button></li>
-              <li className='btn-li lnk-size'><button onClick={() => { window.scrollTo({ top: 0, behavior: 'smooth' }); navigate('/login') }} className='btn-1'>SignIn</button></li>
+              {/* <li className='btn-li lnk-size'><button onClick={() => { window.scrollTo({ top: 0, behavior: 'smooth' }); navigate('/signup') }} className='btn-1'>SignUp</button></li>
+              <li className='btn-li lnk-size'><button onClick={() => { window.scrollTo({ top: 0, behavior: 'smooth' }); navigate('/login') }} className='btn-1'>SignIn</button></li> */}
             </ul>
           </div>
           <div className='hamburger ' onClick={handleOpen}>

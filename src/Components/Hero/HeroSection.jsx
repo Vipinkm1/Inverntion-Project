@@ -41,9 +41,30 @@ const HeroSection = () => {
             {
                 breakpoint: 550,
                 settings: {
+                    slidesToShow: 1,
+                },
+            },
+
+             {
+                breakpoint: 768,
+                settings: {
                     slidesToShow: 2,
                 },
             },
+             {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 4,
+                },
+            },
+             {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 5,
+                },
+            }
+           
+            
         ]
     }
     const progresRefs = useRef([])
@@ -130,7 +151,7 @@ const HeroSection = () => {
                         <ImCheckboxChecked />
                         <p className='quote-2 font'>Dramatically re-engineer value added IT systems via mission</p>
                     </div>
-                    <div className='btns'>
+                    <div className='btns '>
                         <button className='button-1 font ' onClick={() => { window.scrollTo({ top: 0, behavior: 'smooth' }); navigate('/about') }}>Discover More</button>
                     </div>
                 </div>
@@ -208,7 +229,7 @@ const HeroSection = () => {
                     </div>
                 </div>
             </div>
-            <div className='topex-2' data-aos='fade-up'>
+            <div className='topex-2 center-item' data-aos='fade-up'>
                 <p className='secure-it font'>What we do</p>
                 <div className='it-services-flex'>
                     <h1 className='color font hero-font'>We Provide Exclusive Service <br />For
@@ -224,7 +245,7 @@ const HeroSection = () => {
                                 <img className='services-img-add' src={services.Img} />
                             </div>
                             <div className='img-aspect-1'>
-                                <h3 className='copyright p-bg'>{services.title}</h3>
+                                <h3 className=' p-bg' style={{ }}>{services.title}</h3>
                                 <p className='font   p-bg'>{services.description}</p>
                             </div>
                         </div>
