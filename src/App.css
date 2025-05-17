@@ -920,7 +920,6 @@ border-top:  1px solid  #ee6464;
   padding: 20px;
  }
 
-
  .about-page{
   padding: 10px;
  }
@@ -984,6 +983,141 @@ border-top:  1px solid  #ee6464;
   width: 100%;
 
  }
+}
+
+@media (min-width: 561px) and (max-width: 768px) {
+
+   .page{
+    padding: 10px;
+  }
+  .blog-grid{
+
+    grid-template-columns: repeat(1, 1fr);
+ 
+   }
+.hero-section{
+    /* display: block; */
+    padding-top: 30px;
+    text-align: justify;
+  }
+ 
+  .some-about-content{
+    width: 100%;
+  
+  }
+  /* .hero-flex{
+    display: block;
+  } */
+  .footer-flex{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .quote{
+    width: 100%;
+  }
+  .button-1{
+    width: 100%;
+  }
+  .topex-2{
+    margin-top: 15px;
+  }
+  .copyright{
+    text-align: justify;
+  }
+  .hero-font{
+    font-size: 20px;
+  }
+ /* .it-services{
+  display: block;
+ } */
+ .it-services-flex{
+  display: block;
+ }
+ .img-width{
+  width: 50%;
+ }
+ .about-section{
+  display: block;
+ }
+ .about-image{
+  display: none;
+  object-fit: cover;
+ }
+ .project-completion-item{
+   grid-template-columns: repeat(2, 1fr);
+   
+ }
+ .project-item-list{
+  padding: 20px;
+ }
+
+ .about-page{
+  padding: 10px;
+ }
+ .grid-template-hel{
+  display: grid;
+  grid-template-columns: repeat( 2, 1fr);
+  gap: 30px;
+  margin-top: 15px;
+}
+.service-container{
+  /* display: block; */
+  gap: 20px;
+}
+.services-container-1{
+  margin-top: 15px;
+}
+.testimonial{
+  display: block;
+}
+.footer-flex-4{
+ gap: 20px;
+}
+.message-box-text{
+  width: 100%;
+}
+.para1{
+  text-align: justify;
+}
+.header{
+  padding: 0;
+}
+.skillName{
+  grid-template-columns: repeat(2, 1fr);
+}
+.popup{
+  padding: 10px;
+}
+.border-1{
+  width: 100%;
+}
+
+ .border-1{
+  margin-top: 60px;
+ }
+ /* blog detail */
+ .blog-detail-flex{
+  display:block;
+ 
+ }
+ .blog-detail-width{
+  width: 100%;
+ }
+ .blog-title{
+  font-size: 22px ;
+ }
+ .blog-img-width{
+  width: 100%;
+  height: 250px;
+ }
+ .blog-detail-width-1{
+  margin-top: 10px;
+  width: 100%;
+
+ }
+ .blog-grid{
+  grid-template-columns: repeat(2, 1fr);
+ }
+
 }
 
 

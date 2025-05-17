@@ -142,7 +142,7 @@ const About = () => {
                                 <img className='services-img-add' src={services.Img} />
                             </div>
                             <div className='img-aspect-1'>
-                                <h3 className='copyright p-bg'>{services.title}</h3>
+                                <h3 className='copyright p-bg'style={{textAlign: 'center'}}>{services.title}</h3>
                                 <p className='font p-bg'>{services.name}</p>
                             </div>
                         </div>
