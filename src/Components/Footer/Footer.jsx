@@ -68,7 +68,7 @@ const Footer = () => {
       </div>
       {/*  another content */}
       <div className='footer-container-3'>
-        <h2 className='heading  footer-services copyright'>Copyright 2024 | Vipin Kumar , All Right Reserved.</h2>
+        <h2 className='heading  footer-services copyright' style={{textAlign: 'center'}}>Copyright 2024 | Vipin Kumar , All Right Reserved.</h2>
       </div>
     </div>
   )
